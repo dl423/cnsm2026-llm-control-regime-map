@@ -1,0 +1,57 @@
+{
+ "hardware": {
+  "device": "NVIDIA Jetson AGX Orin Developer Kit",
+  "architecture": "aarch64",
+  "memory_mib": 30696,
+  "power_mode": "MODE_30W",
+  "power_mode_id": 2
+ },
+ "operating_system": {
+  "l4t": "R36.4.4",
+  "kernel_release": "5.15.148-tegra"
+ },
+ "cuda": {
+  "version": "12.6",
+  "compiler": "V12.6.68",
+  "target_compute_capability": "8.7"
+ },
+ "llama_cpp": {
+  "repository": "https://github.com/ggml-org/llama.cpp",
+  "recorded_commit_prefix": "3581ba0",
+  "full_commit_captured": false,
+  "lab_binary_sha256_captured": false,
+  "cmake_flags": {
+   "GGML_CUDA": "ON",
+   "CMAKE_CUDA_ARCHITECTURES": "87"
+  },
+  "controller_launch": {
+   "host": "127.0.0.1",
+   "port": 8200,
+   "gpu_layers": 99,
+   "context_tokens_serial": 4096,
+   "parallel_serial": 1,
+   "context_tokens_batched": 8192,
+   "parallel_batched": 4
+  }
+ },
+ "python": {
+  "version": "3.12.13",
+  "environment_manager": "uv 0.12.1",
+  "dependencies": "requirements.txt"
+ },
+ "power_sampling": {
+  "source": "INA3221 sysfs",
+  "nominal_rate_hz": 10,
+  "rails": [
+   "VDD_GPU_SOC",
+   "VDD_CPU_CV",
+   "VIN_SYS_5V0",
+   "VDDQ_VDD2_1V8AO"
+  ]
+ },
+ "provenance_limitations": [
+  "Only the seven-character llama.cpp commit prefix was captured in the experimental record.",
+  "The lab llama-server binary hash was not captured; the CUDA version and build flags are retained.",
+  "Hosted providers did not expose dated snapshots for the recorded model identifiers."
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "I1": {
+  "target_I": 1.0,
+  "analytic_I": 1.0,
+  "window_s": 200.0,
+  "windows_per_episode": 9,
+  "n_seeds": 30,
+  "n_windows_pooled": 270,
+  "realised_I_pooled": 0.8599499349623374,
+  "bootstrap_ci90": [
+   0.7392035676248095,
+   0.9814866702338905
+  ],
+  "leave_one_out_range": [
+   0.8195125599624317,
+   0.8631600445135396
+  ],
+  "max_window_count": 468.0
+ },
+ "I400": {
+  "target_I": 400.0,
+  "analytic_I": 400.0000000000001,
+  "window_s": 1666.6666666666665,
+  "windows_per_episode": 1,
+  "n_seeds": 30,
+  "n_windows_pooled": 30,
+  "realised_I_pooled": 400.7817427475756,
+  "bootstrap_ci90": [
+   277.2480348232054,
+   502.3349504751552
+  ],
+  "leave_one_out_range": [
+   368.30001314748085,
+   415.4613721053149
+  ],
+  "max_window_count": 5756.0
+ },
+ "I1000": {
+  "target_I": 1000.0,
+  "analytic_I": 1000.0,
+  "window_s": 1666.6666666666665,
+  "windows_per_episode": 1,
+  "n_seeds": 30,
+  "n_windows_pooled": 30,
+  "realised_I_pooled": 1921.4764445471653,
+  "bootstrap_ci90": [
+   687.0887410822713,
+   2986.523577120812
+  ],
+  "leave_one_out_range": [
+   1140.9149116746976,
+   1998.6868630987803
+  ],
+  "max_window_count": 13559.0
+ }
+}

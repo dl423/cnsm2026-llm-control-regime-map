@@ -1,0 +1,2221 @@
+{
+ "per_config_summary": {
+  "local-batched": {
+   "n_states": 30,
+   "repeats_per_state": 30,
+   "byte_identity_rate": {
+    "mean": 0.9755555555555555,
+    "n": 30,
+    "ci95": [
+     0.9438790477750543,
+     1.0072320633360567
+    ],
+    "sd": 0.08484077190400216
+   },
+   "states_fully_byte_identical": 26,
+   "decision_identity_rate": {
+    "mean": 1.0,
+    "n": 30,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "sd": 0.0
+   },
+   "direction_entropy_norm": {
+    "mean": 0.0,
+    "n": 30,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "sd": 0.0
+   },
+   "delta_replicas_spread": {
+    "mean": 0.0,
+    "n": 30,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "sd": 0.0
+   },
+   "self_contradiction_states": 0,
+   "parse_failures_total": 0,
+   "by_stratum": {
+    "near": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 15,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-overload": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 8,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-calm": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 7,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    }
+   }
+  },
+  "local-serial": {
+   "n_states": 30,
+   "repeats_per_state": 30,
+   "byte_identity_rate": {
+    "mean": 0.9988888888888888,
+    "n": 30,
+    "ci95": [
+     0.9966166666666666,
+     1.001161111111111
+    ],
+    "sd": 0.006085806194501844
+   },
+   "states_fully_byte_identical": 29,
+   "decision_identity_rate": {
+    "mean": 1.0,
+    "n": 30,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "sd": 0.0
+   },
+   "direction_entropy_norm": {
+    "mean": 0.0,
+    "n": 30,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "sd": 0.0
+   },
+   "delta_replicas_spread": {
+    "mean": 0.0,
+    "n": 30,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "sd": 0.0
+   },
+   "self_contradiction_states": 0,
+   "parse_failures_total": 0,
+   "by_stratum": {
+    "near": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 15,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-overload": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 8,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-calm": {
+     "decision_identity_rate": {
+      "mean": 1.0,
+      "n": 7,
+      "ci95": [
+       1.0,
+       1.0
+      ],
+      "sd": 0.0
+     },
+     "self_contradiction_states": 0
+    }
+   }
+  },
+  "luna-default": {
+   "n_states": 30,
+   "repeats_per_state": 29,
+   "byte_identity_rate": {
+    "mean": 0.2812260536398467,
+    "n": 30,
+    "ci95": [
+     0.20062661567740805,
+     0.3618254916022854
+    ],
+    "sd": 0.21587349777147127
+   },
+   "states_fully_byte_identical": 0,
+   "decision_identity_rate": {
+    "mean": 0.7910003789314134,
+    "n": 30,
+    "ci95": [
+     0.7118632660395124,
+     0.8701374918233143
+    ],
+    "sd": 0.21195687954389758
+   },
+   "direction_entropy_norm": {
+    "mean": 0.21059201773373198,
+    "n": 30,
+    "ci95": [
+     0.11062426278110192,
+     0.31055977268636203
+    ],
+    "sd": 0.2677486279252043
+   },
+   "delta_replicas_spread": {
+    "mean": 0.7333333333333333,
+    "n": 30,
+    "ci95": [
+     0.38071578683342233,
+     1.0859508798332442
+    ],
+    "sd": 0.9444331755018487
+   },
+   "self_contradiction_states": 1,
+   "parse_failures_total": 229,
+   "by_stratum": {
+    "near": {
+     "decision_identity_rate": {
+      "mean": 0.7643993962614652,
+      "n": 15,
+      "ci95": [
+       0.6457230922146644,
+       0.8830757003082661
+      ],
+      "sd": 0.2142803492600035
+     },
+     "self_contradiction_states": 1
+    },
+    "clear-overload": {
+     "decision_identity_rate": {
+      "mean": 0.7826652514152515,
+      "n": 8,
+      "ci95": [
+       0.5498944736468788,
+       1.015436029183624
+      ],
+      "sd": 0.27838274067159935
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-calm": {
+     "decision_identity_rate": {
+      "mean": 0.8575283446712019,
+      "n": 7,
+      "ci95": [
+       0.7538548957187226,
+       0.9612017936236812
+      ],
+      "sd": 0.11209405945590926
+     },
+     "self_contradiction_states": 0
+    }
+   }
+  },
+  "luna-seeded": {
+   "n_states": 30,
+   "repeats_per_state": 30,
+   "byte_identity_rate": {
+    "mean": 0.4814176245210728,
+    "n": 30,
+    "ci95": [
+     0.41518761578203317,
+     0.5476476332601123
+    ],
+    "sd": 0.17738713824027522
+   },
+   "states_fully_byte_identical": 0,
+   "decision_identity_rate": {
+    "mean": 0.9026325484356337,
+    "n": 30,
+    "ci95": [
+     0.8528584868214817,
+     0.9524066100497857
+    ],
+    "sd": 0.1333123536661272
+   },
+   "direction_entropy_norm": {
+    "mean": 0.11164743000602086,
+    "n": 30,
+    "ci95": [
+     0.037754791353667286,
+     0.1855400686583744
+    ],
+    "sd": 0.1979103424130669
+   },
+   "delta_replicas_spread": {
+    "mean": 0.4,
+    "n": 30,
+    "ci95": [
+     0.21396274010573713,
+     0.5860372598942629
+    ],
+    "sd": 0.4982728791224398
+   },
+   "self_contradiction_states": 0,
+   "parse_failures_total": 219,
+   "by_stratum": {
+    "near": {
+     "decision_identity_rate": {
+      "mean": 0.8674657909140667,
+      "n": 15,
+      "ci95": [
+       0.7765212378558937,
+       0.9584103439722398
+      ],
+      "sd": 0.16420827012707748
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-overload": {
+     "decision_identity_rate": {
+      "mean": 0.9482142857142857,
+      "n": 8,
+      "ci95": [
+       0.8799281043898177,
+       1.0165004670387536
+      ],
+      "sd": 0.0816670137435357
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-calm": {
+     "decision_identity_rate": {
+      "mean": 0.9258964719491035,
+      "n": 7,
+      "ci95": [
+       0.8395920783038372,
+       1.01220086559437
+      ],
+      "sd": 0.09331424709341968
+     },
+     "self_contradiction_states": 0
+    }
+   }
+  },
+  "sonnet-default": {
+   "n_states": 30,
+   "repeats_per_state": 20,
+   "byte_identity_rate": {
+    "mean": 0.27227683178534573,
+    "n": 30,
+    "ci95": [
+     0.19148322260611614,
+     0.3530704409645753
+    ],
+    "sd": 0.21639355623335207
+   },
+   "states_fully_byte_identical": 0,
+   "decision_identity_rate": {
+    "mean": 0.8904056540946688,
+    "n": 29,
+    "ci95": [
+     0.8237592955477748,
+     0.9570520126415627
+    ],
+    "sd": 0.17524493387226614
+   },
+   "direction_entropy_norm": {
+    "mean": 0.09571676590536066,
+    "n": 29,
+    "ci95": [
+     0.022140524785491306,
+     0.16929300702523
+    ],
+    "sd": 0.19346688687498192
+   },
+   "delta_replicas_spread": {
+    "mean": 0.5517241379310345,
+    "n": 29,
+    "ci95": [
+     0.2717749081433717,
+     0.8316733677186973
+    ],
+    "sd": 0.7361195019711583
+   },
+   "self_contradiction_states": 0,
+   "parse_failures_total": 123,
+   "by_stratum": {
+    "near": {
+     "decision_identity_rate": {
+      "mean": 0.8531283566058002,
+      "n": 14,
+      "ci95": [
+       0.7439397012633928,
+       0.9623170119482076
+      ],
+      "sd": 0.18914191611751505
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-overload": {
+     "decision_identity_rate": {
+      "mean": 0.9227941176470589,
+      "n": 8,
+      "ci95": [
+       0.7782322648746676,
+       1.0673559704194502
+      ],
+      "sd": 0.17288907635729248
+     },
+     "self_contradiction_states": 0
+    },
+    "clear-calm": {
+     "decision_identity_rate": {
+      "mean": 0.9279448621553884,
+      "n": 7,
+      "ci95": [
+       0.782742696321338,
+       1.0731470279894388
+      ],
+      "sd": 0.15699584005919787
+     },
+     "self_contradiction_states": 0
+    }
+   }
+  }
+ },
+ "per_state": {
+  "luna-seeded": {
+   "st00": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 6,
+    "byte_identity_rate": 0.4666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9166666666666666,
+    "direction_entropy_norm": 0.2610893633857883,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st01": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 26,
+    "byte_identity_rate": 0.8666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.75,
+    "direction_entropy_norm": 0.5118595071429147,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st02": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 4,
+    "byte_identity_rate": 0.5333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st03": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.5333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st04": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 25,
+    "byte_identity_rate": 0.8333333333333334,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.8,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st05": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 26,
+    "byte_identity_rate": 0.8666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st06": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.43333333333333335,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st07": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.3333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st08": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st09": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.43333333333333335,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9310344827586207,
+    "direction_entropy_norm": 0.22842890703676902,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st10": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.3,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st11": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.36666666666666664,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5666666666666667,
+    "direction_entropy_norm": 0.6228145927257203,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st12": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.3333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.8333333333333334,
+    "direction_entropy_norm": 0.41011848630651804,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st13": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 23,
+    "byte_identity_rate": 0.7666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5714285714285714,
+    "direction_entropy_norm": 0.6216097450797566,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st14": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 2,
+    "byte_identity_rate": 0.3,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.6428571428571429,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st15": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 5,
+    "byte_identity_rate": 0.4666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st16": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 16,
+    "byte_identity_rate": 0.5333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7857142857142857,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st17": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 20,
+    "byte_identity_rate": 0.6666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st18": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.4666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st19": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.4,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.8666666666666667,
+    "direction_entropy_norm": 0.3574277033653125,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st20": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 15,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9333333333333333,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st21": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.3333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st22": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 5,
+    "byte_identity_rate": 0.6,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st23": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.41379310344827586,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9615384615384616,
+    "direction_entropy_norm": 0.1483905024328517,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st24": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 11,
+    "byte_identity_rate": 0.36666666666666664,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.8947368421052632,
+    "direction_entropy_norm": 0.18768409270499467,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st25": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 6,
+    "byte_identity_rate": 0.2,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st26": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 17,
+    "byte_identity_rate": 0.5862068965517241,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.75,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st27": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 2,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st28": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 5,
+    "byte_identity_rate": 0.27586206896551724,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.875,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st29": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.26666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   }
+  },
+  "local-serial": {
+   "st00": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st01": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st02": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st03": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st04": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st05": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st06": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st07": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st08": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st09": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st10": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st11": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.9666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st12": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st13": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st14": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st15": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st16": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st17": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st18": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st19": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st20": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st21": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st22": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st23": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st24": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st25": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st26": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st27": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st28": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st29": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   }
+  },
+  "local-batched": {
+   "st00": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st01": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st02": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.9,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st03": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st04": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st05": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st06": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.9666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st07": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st08": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st09": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.8333333333333334,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st10": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st11": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st12": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.5666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st13": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st14": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st15": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st16": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st17": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st18": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st19": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st20": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st21": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st22": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st23": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st24": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st25": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st26": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st27": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st28": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st29": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 1.0,
+    "byte_all_identical": true,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   }
+  },
+  "luna-default": {
+   "st00": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 20,
+    "byte_identity_rate": 0.6896551724137931,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.4444444444444444,
+    "direction_entropy_norm": 0.482159360969681,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st01": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 15,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.6,
+    "direction_entropy_norm": 0.7766490138119515,
+    "delta_replicas_spread": 2,
+    "self_contradiction": true,
+    "stratum": "near"
+   },
+   "st02": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 15,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st03": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.03333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st04": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 21,
+    "byte_identity_rate": 0.7,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.6666666666666666,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st05": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 15,
+    "byte_identity_rate": 0.5,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.6666666666666666,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st06": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st07": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.06666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st08": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.06666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st09": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.16666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7586206896551724,
+    "direction_entropy_norm": 0.503057018563316,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st10": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.06666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st11": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7241379310344828,
+    "direction_entropy_norm": 0.5361332756242886,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st12": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 2,
+    "byte_identity_rate": 0.06666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5,
+    "direction_entropy_norm": 0.6309297535714574,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st13": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 8,
+    "byte_identity_rate": 0.26666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5454545454545454,
+    "direction_entropy_norm": 0.6271632363697399,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st14": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 5,
+    "byte_identity_rate": 0.16666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.56,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st15": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 16,
+    "byte_identity_rate": 0.5333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.42857142857142855,
+    "direction_entropy_norm": 0.5445684476282007,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st16": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 20,
+    "byte_identity_rate": 0.6666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5,
+    "direction_entropy_norm": 0.6309297535714574,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st17": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 11,
+    "byte_identity_rate": 0.36666666666666664,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st18": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.03333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st19": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.16666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st20": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 18,
+    "byte_identity_rate": 0.6,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.4166666666666667,
+    "direction_entropy_norm": 0.41011848630651804,
+    "delta_replicas_spread": 4,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st21": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 4,
+    "byte_identity_rate": 0.13333333333333333,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9615384615384616,
+    "direction_entropy_norm": 0.1483905024328517,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st22": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 8,
+    "byte_identity_rate": 0.26666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9545454545454546,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st23": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 2,
+    "byte_identity_rate": 0.06666666666666667,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.8928571428571429,
+    "direction_entropy_norm": 0.30993625502232425,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st24": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 12,
+    "byte_identity_rate": 0.4,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7777777777777778,
+    "direction_entropy_norm": 0.31752065714278016,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st25": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 5,
+    "byte_identity_rate": 0.16666666666666666,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.84,
+    "direction_entropy_norm": 0.40020477099739327,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st26": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 8,
+    "byte_identity_rate": 0.27586206896551724,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7142857142857143,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st27": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 7,
+    "byte_identity_rate": 0.23333333333333334,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st28": {
+    "n": 30,
+    "api_errors": 0,
+    "parse_failures": 12,
+    "byte_identity_rate": 0.4,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.7777777777777778,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st29": {
+    "n": 29,
+    "api_errors": 1,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.13793103448275862,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   }
+  },
+  "sonnet-default": {
+   "st00": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 13,
+    "byte_identity_rate": 0.6,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5714285714285714,
+    "direction_entropy_norm": 0.5445684476282007,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st01": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 18,
+    "byte_identity_rate": 0.8,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st02": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 7,
+    "byte_identity_rate": 0.3,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st03": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.6,
+    "direction_entropy_norm": 0.6126016192893442,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st04": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st05": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 20,
+    "byte_identity_rate": 0.9,
+    "byte_all_identical": false,
+    "decision_identity_rate": null,
+    "direction_entropy_norm": null,
+    "delta_replicas_spread": null,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st06": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9,
+    "direction_entropy_norm": 0.29590327428938457,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st07": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 1,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9473684210526315,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st08": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.25,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st09": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st10": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st11": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st12": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.2,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9,
+    "direction_entropy_norm": 0.29590327428938457,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st13": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st14": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 4,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.625,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "near"
+   },
+   "st15": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st16": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 9,
+    "byte_identity_rate": 0.45,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st17": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 13,
+    "byte_identity_rate": 0.6,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st18": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.45,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st19": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9411764705882353,
+    "direction_entropy_norm": 0.2036369685406085,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st20": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 4,
+    "byte_identity_rate": 0.2,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 2,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st21": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9411764705882353,
+    "direction_entropy_norm": 0.2036369685406085,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st22": {
+    "n": 16,
+    "api_errors": 4,
+    "parse_failures": 8,
+    "byte_identity_rate": 0.4375,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-overload"
+   },
+   "st23": {
+    "n": 19,
+    "api_errors": 1,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.2631578947368421,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.5789473684210527,
+    "direction_entropy_norm": 0.619535658677928,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st24": {
+    "n": 17,
+    "api_errors": 3,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.11764705882352941,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st25": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 3,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st26": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.3,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st27": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.15,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st28": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 8,
+    "byte_identity_rate": 0.4,
+    "byte_all_identical": false,
+    "decision_identity_rate": 0.9166666666666666,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 1,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   },
+   "st29": {
+    "n": 20,
+    "api_errors": 0,
+    "parse_failures": 0,
+    "byte_identity_rate": 0.1,
+    "byte_all_identical": false,
+    "decision_identity_rate": 1.0,
+    "direction_entropy_norm": -0.0,
+    "delta_replicas_spread": 0,
+    "self_contradiction": false,
+    "stratum": "clear-calm"
+   }
+  }
+ }
+}

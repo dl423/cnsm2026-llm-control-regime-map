@@ -1,0 +1,527 @@
+{
+ "system": "You are the controller of an edge inference service running on a single-site tier.\nObjective (this is exactly how you are scored, per 1500 s episode):\n  score = -(0.5 * V) - (0.2 * A) - (0.3 * C)\n  V = fraction of ALL offered requests that miss the SLO: completed later than\n      3000 ms end-to-end, dropped after waiting 30 s, or still\n      queued at episode end. Dropped and unserved work counts against you.\n  A = accuracy deficit: mean over time of (best variant accuracy - current variant\n      accuracy). Variants (accuracy, single-stream p50 service time):\n      tiny-1B4: accuracy 0.72, p50 service ~0.40 s\n      lite-1B: accuracy 0.69, p50 service ~0.41 s\n      full-3B: accuracy 0.92, p50 service ~1.17 s\n  C = mean replicas / 6. Replicas cost; do not over-provision.\nConstraints: replicas between 1 and 6. Switching variant reloads the\nservice and pauses new dispatches for roughly 4 s.\n\nRespond with ONLY a JSON object, no markdown fence, of the form:\n{\"replicas\": <int>, \"variant\": \"<one of: tiny-1B4 | lite-1B | full-3B>\", \"why\": \"<one clause, max 12 words>\"}",
+ "replayed_ok": 142,
+ "replay_excluded": 38,
+ "pool_sizes": {
+  "near": 822,
+  "clear-overload": 994,
+  "clear-calm": 1567
+ },
+ "quota": {
+  "near": 15,
+  "clear-overload": 8,
+  "clear-calm": 7
+ },
+ "states": [
+  {
+   "t": 915.0,
+   "user": "STATE t=915s window=15s\n  arrivals 2.73 req/s (prev 2.00) | queue 0 | in-flight 2\n  p50 922 ms | p95 3157 ms | completed 44 | dropped 0\n  replicas 6 | variant tiny-1B4 | utilization 0.40\nHISTORY (last decisions and outcomes):\n  t=855s: chose replicas=3 variant=tiny-1B4 (queue was 0, p95 1067ms)\n  t=870s: chose replicas=4 variant=full-3B (queue was 0, p95 977ms)\n  t=885s: chose replicas=4 variant=tiny-1B4 (queue was 12, p95 10333ms)\n  t=900s: chose replicas=6 variant=tiny-1B4 (queue was 1, p95 14007ms)",
+   "obs": {
+    "replicas": 6,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 3157.0873915394486,
+    "utilization": 0.4021465544606586,
+    "arrival_rate": 2.7333333333333334
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c15|s17",
+   "I": 1.0,
+   "cadence_s": 15,
+   "state_id": "st00"
+  },
+  {
+   "t": 900.0,
+   "user": "STATE t=900s window=60s\n  arrivals 1.90 req/s (prev 1.88) | queue 12 | in-flight 3\n  p50 10274 ms | p95 12557 ms | completed 101 | dropped 0\n  replicas 3 | variant full-3B | utilization 0.87\nHISTORY (last decisions and outcomes):\n  t=660s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1194ms)\n  t=720s: chose replicas=2 variant=tiny-1B4 (queue was 2, p95 1353ms)\n  t=780s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1423ms)\n  t=840s: chose replicas=3 variant=full-3B (queue was 0, p95 1301ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "full-3B",
+    "queue_len": 12,
+    "p95_ms": 12556.86297837576,
+    "utilization": 0.8698227024696431,
+    "arrival_rate": 1.9
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c60|s20",
+   "I": 1.0,
+   "cadence_s": 60,
+   "state_id": "st01"
+  },
+  {
+   "t": 900.0,
+   "user": "STATE t=900s window=300s\n  arrivals 1.83 req/s (prev 1.93) | queue 0 | in-flight 5\n  p50 4663 ms | p95 12642 ms | completed 571 | dropped 0\n  replicas 5 | variant full-3B | utilization 0.92\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=3 variant=full-3B (queue was 0, p95 1138ms)\n  t=600s: chose replicas=5 variant=full-3B (queue was 23, p95 14713ms)",
+   "obs": {
+    "replicas": 5,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 12642.1999027732,
+    "utilization": 0.9151520776701872,
+    "arrival_rate": 1.8333333333333333
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c300|s3",
+   "I": 1.0,
+   "cadence_s": 300,
+   "state_id": "st02"
+  },
+  {
+   "t": 660.0,
+   "user": "STATE t=660s window=15s\n  arrivals 1.00 req/s (prev 0.53) | queue 0 | in-flight 0\n  p50 1529 ms | p95 2569 ms | completed 15 | dropped 0\n  replicas 3 | variant full-3B | utilization 0.48\nHISTORY (last decisions and outcomes):\n  t=600s: chose replicas=3 variant=full-3B (queue was 0, p95 1798ms)\n  t=615s: chose replicas=1 variant=full-3B (queue was 0, p95 1622ms)\n  t=630s: chose replicas=2 variant=full-3B (queue was 2, p95 4245ms)\n  t=645s: chose replicas=3 variant=full-3B (queue was 0, p95 6340ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 2568.7763281166553,
+    "utilization": 0.48243132871058253,
+    "arrival_rate": 1.0
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c15|s12",
+   "I": 400.0,
+   "cadence_s": 15,
+   "state_id": "st03"
+  },
+  {
+   "t": 360.0,
+   "user": "STATE t=360s window=60s\n  arrivals 3.47 req/s (prev 0.87) | queue 30 | in-flight 1\n  p50 28635 ms | p95 31150 ms | completed 39 | dropped 139\n  replicas 1 | variant full-3B | utilization 0.78\nHISTORY (last decisions and outcomes):\n  t=120s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1242ms)\n  t=180s: chose replicas=6 variant=tiny-1B4 (queue was 367, p95 30620ms)\n  t=240s: chose replicas=6 variant=tiny-1B4 (queue was 20, p95 31452ms)\n  t=300s: chose replicas=1 variant=full-3B (queue was 0, p95 15530ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 30,
+    "p95_ms": 31149.92194893068,
+    "utilization": 0.7758066388467019,
+    "arrival_rate": 3.466666666666667
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c60|s3",
+   "I": 400.0,
+   "cadence_s": 60,
+   "state_id": "st04"
+  },
+  {
+   "t": 600.0,
+   "user": "STATE t=600s window=300s\n  arrivals 3.26 req/s (prev 0.80) | queue 0 | in-flight 0\n  p50 13537 ms | p95 31599 ms | completed 309 | dropped 670\n  replicas 2 | variant full-3B | utilization 0.78\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=2 variant=full-3B (queue was 0, p95 1067ms)",
+   "obs": {
+    "replicas": 2,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 31599.217077944104,
+    "utilization": 0.7795829138097665,
+    "arrival_rate": 3.263333333333333
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c300|s19",
+   "I": 400.0,
+   "cadence_s": 300,
+   "state_id": "st05"
+  },
+  {
+   "t": 1665.0,
+   "user": "STATE t=1665s window=15s\n  arrivals 0.07 req/s (prev 0.13) | queue 0 | in-flight 0\n  p50 2430 ms | p95 2430 ms | completed 2 | dropped 0\n  replicas 1 | variant full-3B | utilization 0.10\nHISTORY (last decisions and outcomes):\n  t=1605s: chose replicas=1 variant=full-3B (queue was 0, p95 1380ms)\n  t=1620s: chose replicas=1 variant=full-3B (queue was 0, p95 1520ms)\n  t=1635s: chose replicas=1 variant=full-3B (queue was 0, p95 3404ms)\n  t=1650s: chose replicas=1 variant=full-3B (queue was 0, p95 1361ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 2430.0379321325636,
+    "utilization": 0.09908894393693117,
+    "arrival_rate": 0.06666666666666667
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c15|s19",
+   "I": 1000.0,
+   "cadence_s": 15,
+   "state_id": "st06"
+  },
+  {
+   "t": 1320.0,
+   "user": "STATE t=1320s window=60s\n  arrivals 17.37 req/s (prev 0.10) | queue 509 | in-flight 1\n  p50 27325 ms | p95 31383 ms | completed 45 | dropped 487\n  replicas 1 | variant full-3B | utilization 0.93\nHISTORY (last decisions and outcomes):\n  t=1080s: chose replicas=1 variant=full-3B (queue was 0, p95 12936ms)\n  t=1140s: chose replicas=2 variant=full-3B (queue was 2, p95 27739ms)\n  t=1200s: chose replicas=1 variant=full-3B (queue was 0, p95 14276ms)\n  t=1260s: chose replicas=1 variant=full-3B (queue was 0, p95 1361ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 509,
+    "p95_ms": 31382.666847470773,
+    "utilization": 0.9312512397324592,
+    "arrival_rate": 17.366666666666667
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c60|s15",
+   "I": 1000.0,
+   "cadence_s": 60,
+   "state_id": "st07"
+  },
+  {
+   "t": 1200.0,
+   "user": "STATE t=1200s window=300s\n  arrivals 0.15 req/s (prev 0.14) | queue 0 | in-flight 0\n  p50 1317 ms | p95 2569 ms | completed 44 | dropped 0\n  replicas 1 | variant full-3B | utilization 0.19\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=6 variant=tiny-1B4 (queue was 0, p95 30892ms)\n  t=600s: chose replicas=6 variant=tiny-1B4 (queue was 0, p95 31462ms)\n  t=900s: chose replicas=1 variant=full-3B (queue was 0, p95 981ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 2568.7763281166553,
+    "utilization": 0.18696713713308175,
+    "arrival_rate": 0.14666666666666667
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c300|s1",
+   "I": 1000.0,
+   "cadence_s": 300,
+   "state_id": "st08"
+  },
+  {
+   "t": 1320.0,
+   "user": "STATE t=1320s window=15s\n  arrivals 2.60 req/s (prev 1.87) | queue 0 | in-flight 1\n  p50 916 ms | p95 2249 ms | completed 39 | dropped 0\n  replicas 2 | variant tiny-1B4 | utilization 0.82\nHISTORY (last decisions and outcomes):\n  t=1260s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1468ms)\n  t=1275s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1838ms)\n  t=1290s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1371ms)\n  t=1305s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1138ms)",
+   "obs": {
+    "replicas": 2,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 2249.2561048593416,
+    "utilization": 0.8249163624097567,
+    "arrival_rate": 2.6
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c15|s5",
+   "I": 1.0,
+   "cadence_s": 15,
+   "state_id": "st09"
+  },
+  {
+   "t": 300.0,
+   "user": "STATE t=300s window=60s\n  arrivals 1.97 req/s (prev 1.75) | queue 4 | in-flight 1\n  p50 1107 ms | p95 2803 ms | completed 113 | dropped 0\n  replicas 1 | variant tiny-1B4 | utilization 0.00\nHISTORY (last decisions and outcomes):\n  t=60s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 2539ms)\n  t=120s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1513ms)\n  t=180s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1335ms)\n  t=240s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1078ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "tiny-1B4",
+    "queue_len": 4,
+    "p95_ms": 2802.974462798943,
+    "utilization": 0.0,
+    "arrival_rate": 1.9666666666666666
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c60|s4",
+   "I": 1.0,
+   "cadence_s": 60,
+   "state_id": "st10"
+  },
+  {
+   "t": 1065.0,
+   "user": "STATE t=1065s window=15s\n  arrivals 0.60 req/s (prev 0.93) | queue 0 | in-flight 2\n  p50 1591 ms | p95 2569 ms | completed 8 | dropped 0\n  replicas 3 | variant full-3B | utilization 0.28\nHISTORY (last decisions and outcomes):\n  t=1005s: chose replicas=3 variant=full-3B (queue was 0, p95 3749ms)\n  t=1020s: chose replicas=4 variant=full-3B (queue was 0, p95 3513ms)\n  t=1035s: chose replicas=3 variant=full-3B (queue was 0, p95 2632ms)\n  t=1050s: chose replicas=3 variant=full-3B (queue was 0, p95 3437ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 2568.7763281166553,
+    "utilization": 0.2750488382638044,
+    "arrival_rate": 0.6
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c15|s11",
+   "I": 400.0,
+   "cadence_s": 15,
+   "state_id": "st11"
+  },
+  {
+   "t": 1620.0,
+   "user": "STATE t=1620s window=60s\n  arrivals 0.85 req/s (prev 0.75) | queue 0 | in-flight 3\n  p50 1401 ms | p95 2495 ms | completed 50 | dropped 0\n  replicas 3 | variant full-3B | utilization 0.38\nHISTORY (last decisions and outcomes):\n  t=1380s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1151ms)\n  t=1440s: chose replicas=2 variant=full-3B (queue was 0, p95 1472ms)\n  t=1500s: chose replicas=3 variant=full-3B (queue was 0, p95 9857ms)\n  t=1560s: chose replicas=3 variant=full-3B (queue was 0, p95 3513ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 2495.1048217883454,
+    "utilization": 0.38025909579152234,
+    "arrival_rate": 0.85
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c60|s11",
+   "I": 400.0,
+   "cadence_s": 60,
+   "state_id": "st12"
+  },
+  {
+   "t": 600.0,
+   "user": "STATE t=600s window=300s\n  arrivals 1.00 req/s (prev 1.84) | queue 0 | in-flight 1\n  p50 482 ms | p95 2879 ms | completed 299 | dropped 0\n  replicas 3 | variant tiny-1B4 | utilization 0.17\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=3 variant=tiny-1B4 (queue was 0, p95 30453ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 2878.6765455930095,
+    "utilization": 0.1696716915674147,
+    "arrival_rate": 1.0
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c300|s14",
+   "I": 400.0,
+   "cadence_s": 300,
+   "state_id": "st13"
+  },
+  {
+   "t": 930.0,
+   "user": "STATE t=930s window=15s\n  arrivals 1.47 req/s (prev 0.27) | queue 18 | in-flight 1\n  p50 2569 ms | p95 2793 ms | completed 4 | dropped 0\n  replicas 1 | variant full-3B | utilization 0.42\nHISTORY (last decisions and outcomes):\n  t=870s: chose replicas=1 variant=full-3B (queue was 0, p95 1380ms)\n  t=885s: chose replicas=1 variant=full-3B (queue was 0, p95 1178ms)\n  t=900s: chose replicas=2 variant=full-3B (queue was 0, p95 3429ms)\n  t=915s: chose replicas=1 variant=full-3B (queue was 0, p95 1798ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 18,
+    "p95_ms": 2793.1222703865615,
+    "utilization": 0.4159818170240669,
+    "arrival_rate": 1.4666666666666666
+   },
+   "stratum": "near",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c15|s4",
+   "I": 1000.0,
+   "cadence_s": 15,
+   "state_id": "st14"
+  },
+  {
+   "t": 900.0,
+   "user": "STATE t=900s window=15s\n  arrivals 2.00 req/s (prev 1.87) | queue 1 | in-flight 4\n  p50 7458 ms | p95 14007 ms | completed 41 | dropped 0\n  replicas 4 | variant tiny-1B4 | utilization 0.69\nHISTORY (last decisions and outcomes):\n  t=840s: chose replicas=3 variant=tiny-1B4 (queue was 0, p95 1022ms)\n  t=855s: chose replicas=3 variant=tiny-1B4 (queue was 0, p95 1067ms)\n  t=870s: chose replicas=4 variant=full-3B (queue was 0, p95 977ms)\n  t=885s: chose replicas=4 variant=tiny-1B4 (queue was 12, p95 10333ms)",
+   "obs": {
+    "replicas": 4,
+    "variant": "tiny-1B4",
+    "queue_len": 1,
+    "p95_ms": 14006.962895871653,
+    "utilization": 0.6851436197887552,
+    "arrival_rate": 2.0
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c15|s17",
+   "I": 1.0,
+   "cadence_s": 15,
+   "state_id": "st15"
+  },
+  {
+   "t": 1080.0,
+   "user": "STATE t=1080s window=60s\n  arrivals 2.05 req/s (prev 1.75) | queue 0 | in-flight 0\n  p50 2210 ms | p95 28587 ms | completed 166 | dropped 7\n  replicas 6 | variant tiny-1B4 | utilization 0.43\nHISTORY (last decisions and outcomes):\n  t=840s: chose replicas=4 variant=full-3B (queue was 0, p95 11601ms)\n  t=900s: chose replicas=4 variant=full-3B (queue was 22, p95 15289ms)\n  t=960s: chose replicas=6 variant=full-3B (queue was 66, p95 28694ms)\n  t=1020s: chose replicas=6 variant=tiny-1B4 (queue was 44, p95 35965ms)",
+   "obs": {
+    "replicas": 6,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 28586.555404648265,
+    "utilization": 0.4286807460071322,
+    "arrival_rate": 2.05
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c60|s3",
+   "I": 1.0,
+   "cadence_s": 60,
+   "state_id": "st16"
+  },
+  {
+   "t": 1200.0,
+   "user": "STATE t=1200s window=300s\n  arrivals 2.03 req/s (prev 2.09) | queue 60 | in-flight 6\n  p50 29910 ms | p95 33273 ms | completed 549 | dropped 51\n  replicas 6 | variant full-3B | utilization 0.99\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=3 variant=full-3B (queue was 0, p95 1467ms)\n  t=600s: chose replicas=3 variant=full-3B (queue was 46, p95 21651ms)\n  t=900s: chose replicas=6 variant=full-3B (queue was 55, p95 31460ms)",
+   "obs": {
+    "replicas": 6,
+    "variant": "full-3B",
+    "queue_len": 60,
+    "p95_ms": 33272.783862457574,
+    "utilization": 0.987979249569277,
+    "arrival_rate": 2.026666666666667
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c300|s12",
+   "I": 1.0,
+   "cadence_s": 300,
+   "state_id": "st17"
+  },
+  {
+   "t": 510.0,
+   "user": "STATE t=510s window=15s\n  arrivals 20.87 req/s (prev 7.20) | queue 357 | in-flight 6\n  p50 14685 ms | p95 17367 ms | completed 46 | dropped 0\n  replicas 6 | variant tiny-1B4 | utilization 0.63\nHISTORY (last decisions and outcomes):\n  t=450s: chose replicas=3 variant=full-3B (queue was 0, p95 2612ms)\n  t=465s: chose replicas=2 variant=full-3B (queue was 0, p95 2130ms)\n  t=480s: chose replicas=2 variant=full-3B (queue was 0, p95 1694ms)\n  t=495s: chose replicas=6 variant=tiny-1B4 (queue was 94, p95 4264ms)",
+   "obs": {
+    "replicas": 6,
+    "variant": "tiny-1B4",
+    "queue_len": 357,
+    "p95_ms": 17367.311309085664,
+    "utilization": 0.6266928938326765,
+    "arrival_rate": 20.866666666666667
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c15|s9",
+   "I": 400.0,
+   "cadence_s": 15,
+   "state_id": "st18"
+  },
+  {
+   "t": 540.0,
+   "user": "STATE t=540s window=60s\n  arrivals 0.73 req/s (prev 1.02) | queue 0 | in-flight 1\n  p50 2878 ms | p95 12403 ms | completed 43 | dropped 0\n  replicas 2 | variant full-3B | utilization 0.51\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=3 variant=full-3B (queue was 0, p95 2030ms)\n  t=360s: chose replicas=3 variant=full-3B (queue was 0, p95 2030ms)\n  t=420s: chose replicas=6 variant=tiny-1B4 (queue was 252, p95 31661ms)\n  t=480s: chose replicas=2 variant=full-3B (queue was 0, p95 31428ms)",
+   "obs": {
+    "replicas": 2,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 12402.736487006734,
+    "utilization": 0.5054493585585191,
+    "arrival_rate": 0.7333333333333333
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c60|s19",
+   "I": 400.0,
+   "cadence_s": 60,
+   "state_id": "st19"
+  },
+  {
+   "t": 300.0,
+   "user": "STATE t=300s window=300s\n  arrivals 1.88 req/s (prev 0.00) | queue 0 | in-flight 0\n  p50 4040 ms | p95 29333 ms | completed 467 | dropped 97\n  replicas 2 | variant tiny-1B4 | utilization 0.00\nHISTORY: none",
+   "obs": {
+    "replicas": 2,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 29333.375077764827,
+    "utilization": 0.0,
+    "arrival_rate": 1.88
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c300|s2",
+   "I": 400.0,
+   "cadence_s": 300,
+   "state_id": "st20"
+  },
+  {
+   "t": 1350.0,
+   "user": "STATE t=1350s window=15s\n  arrivals 0.20 req/s (prev 0.20) | queue 0 | in-flight 0\n  p50 2286 ms | p95 9583 ms | completed 3 | dropped 0\n  replicas 1 | variant full-3B | utilization 0.21\nHISTORY (last decisions and outcomes):\n  t=1290s: chose replicas=1 variant=full-3B (queue was 0, p95 1520ms)\n  t=1305s: chose replicas=6 variant=tiny-1B4 (queue was 110, p95 13814ms)\n  t=1320s: chose replicas=6 variant=tiny-1B4 (queue was 110, p95 15194ms)\n  t=1335s: chose replicas=1 variant=full-3B (queue was 0, p95 31581ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": 9583.202526238892,
+    "utilization": 0.20707986528674763,
+    "arrival_rate": 0.2
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c15|s4",
+   "I": 1000.0,
+   "cadence_s": 15,
+   "state_id": "st21"
+  },
+  {
+   "t": 420.0,
+   "user": "STATE t=420s window=60s\n  arrivals 8.02 req/s (prev 0.13) | queue 450 | in-flight 2\n  p50 6019 ms | p95 14358 ms | completed 29 | dropped 0\n  replicas 2 | variant full-3B | utilization 0.34\nHISTORY (last decisions and outcomes):\n  t=180s: chose replicas=1 variant=full-3B (queue was 0, p95 30580ms)\n  t=240s: chose replicas=1 variant=full-3B (queue was 0, p95 1380ms)\n  t=300s: chose replicas=1 variant=full-3B (queue was 0, p95 2569ms)\n  t=360s: chose replicas=2 variant=full-3B (queue was 0, p95 3601ms)",
+   "obs": {
+    "replicas": 2,
+    "variant": "full-3B",
+    "queue_len": 450,
+    "p95_ms": 14357.962665903982,
+    "utilization": 0.34156274365581585,
+    "arrival_rate": 8.016666666666667
+   },
+   "stratum": "clear-overload",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c60|s16",
+   "I": 1000.0,
+   "cadence_s": 60,
+   "state_id": "st22"
+  },
+  {
+   "t": 1065.0,
+   "user": "STATE t=1065s window=15s\n  arrivals 1.80 req/s (prev 2.47) | queue 0 | in-flight 1\n  p50 532 ms | p95 1093 ms | completed 29 | dropped 0\n  replicas 3 | variant tiny-1B4 | utilization 0.35\nHISTORY (last decisions and outcomes):\n  t=1005s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1078ms)\n  t=1020s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 781ms)\n  t=1035s: chose replicas=2 variant=tiny-1B4 (queue was 8, p95 3526ms)\n  t=1050s: chose replicas=3 variant=tiny-1B4 (queue was 1, p95 5841ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 1093.427067009543,
+    "utilization": 0.35000380990233376,
+    "arrival_rate": 1.8
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c15|s17",
+   "I": 1.0,
+   "cadence_s": 15,
+   "state_id": "st23"
+  },
+  {
+   "t": 300.0,
+   "user": "STATE t=300s window=60s\n  arrivals 2.02 req/s (prev 2.12) | queue 0 | in-flight 2\n  p50 527 ms | p95 1138 ms | completed 122 | dropped 0\n  replicas 2 | variant tiny-1B4 | utilization 0.00\nHISTORY (last decisions and outcomes):\n  t=60s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1325ms)\n  t=120s: chose replicas=2 variant=tiny-1B4 (queue was 0, p95 1078ms)\n  t=180s: chose replicas=2 variant=tiny-1B4 (queue was 1, p95 1326ms)\n  t=240s: chose replicas=2 variant=tiny-1B4 (queue was 1, p95 1387ms)",
+   "obs": {
+    "replicas": 2,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 1138.0733139812946,
+    "utilization": 0.0,
+    "arrival_rate": 2.0166666666666666
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c60|s15",
+   "I": 1.0,
+   "cadence_s": 60,
+   "state_id": "st24"
+  },
+  {
+   "t": 300.0,
+   "user": "STATE t=300s window=300s\n  arrivals 2.05 req/s (prev 0.00) | queue 0 | in-flight 1\n  p50 592 ms | p95 1480 ms | completed 614 | dropped 0\n  replicas 2 | variant tiny-1B4 | utilization 0.00\nHISTORY: none",
+   "obs": {
+    "replicas": 2,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 1479.8046947519624,
+    "utilization": 0.0,
+    "arrival_rate": 2.05
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1|c300|s6",
+   "I": 1.0,
+   "cadence_s": 300,
+   "state_id": "st25"
+  },
+  {
+   "t": 495.0,
+   "user": "STATE t=495s window=15s\n  arrivals 0.60 req/s (prev 0.80) | queue 0 | in-flight 0\n  p50 395 ms | p95 636 ms | completed 9 | dropped 0\n  replicas 1 | variant tiny-1B4 | utilization 0.24\nHISTORY (last decisions and outcomes):\n  t=435s: chose replicas=6 variant=tiny-1B4 (queue was 61, p95 31364ms)\n  t=450s: chose replicas=6 variant=tiny-1B4 (queue was 0, p95 31496ms)\n  t=465s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 977ms)\n  t=480s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 629ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 635.5506352467728,
+    "utilization": 0.24192076350251834,
+    "arrival_rate": 0.6
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c15|s4",
+   "I": 400.0,
+   "cadence_s": 15,
+   "state_id": "st26"
+  },
+  {
+   "t": 1320.0,
+   "user": "STATE t=1320s window=60s\n  arrivals 0.77 req/s (prev 0.83) | queue 0 | in-flight 0\n  p50 513 ms | p95 1067 ms | completed 47 | dropped 0\n  replicas 1 | variant tiny-1B4 | utilization 0.35\nHISTORY (last decisions and outcomes):\n  t=1080s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1742ms)\n  t=1140s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1067ms)\n  t=1200s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1536ms)\n  t=1260s: chose replicas=1 variant=tiny-1B4 (queue was 0, p95 1185ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 1067.4848705530167,
+    "utilization": 0.3505144427492193,
+    "arrival_rate": 0.7666666666666667
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c60|s18",
+   "I": 400.0,
+   "cadence_s": 60,
+   "state_id": "st27"
+  },
+  {
+   "t": 600.0,
+   "user": "STATE t=600s window=300s\n  arrivals 0.78 req/s (prev 0.92) | queue 0 | in-flight 0\n  p50 454 ms | p95 977 ms | completed 233 | dropped 0\n  replicas 3 | variant tiny-1B4 | utilization 0.13\nHISTORY (last decisions and outcomes):\n  t=300s: chose replicas=3 variant=tiny-1B4 (queue was 0, p95 6520ms)",
+   "obs": {
+    "replicas": 3,
+    "variant": "tiny-1B4",
+    "queue_len": 0,
+    "p95_ms": 977.1079123020172,
+    "utilization": 0.13389041407654675,
+    "arrival_rate": 0.7766666666666666
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I400|c300|s18",
+   "I": 400.0,
+   "cadence_s": 300,
+   "state_id": "st28"
+  },
+  {
+   "t": 945.0,
+   "user": "STATE t=945s window=15s\n  arrivals 0.00 req/s (prev 0.07) | queue 0 | in-flight 0\n  p50 n/a ms | p95 n/a ms | completed 0 | dropped 0\n  replicas 1 | variant full-3B | utilization 0.00\nHISTORY (last decisions and outcomes):\n  t=885s: chose replicas=1 variant=full-3B (queue was 0, p95 1105ms)\n  t=900s: chose replicas=1 variant=full-3B (queue was 0, p95 1452ms)\n  t=915s: chose replicas=2 variant=full-3B (queue was 0, p95 3682ms)\n  t=930s: chose replicas=1 variant=full-3B (queue was 0, p95 820ms)",
+   "obs": {
+    "replicas": 1,
+    "variant": "full-3B",
+    "queue_len": 0,
+    "p95_ms": null,
+    "utilization": 0.0,
+    "arrival_rate": 0.0
+   },
+   "stratum": "clear-calm",
+   "episode_key": "C|llm_full|gpt-5.6-luna|I1000|c15|s12",
+   "I": 1000.0,
+   "cadence_s": 15,
+   "state_id": "st29"
+  }
+ ]
+}

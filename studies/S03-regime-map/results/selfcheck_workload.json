@@ -1,0 +1,46 @@
+{
+ "module": "workload.py",
+ "adapted_from": "S01 src/workload.py",
+ "horizon_s": 200000.0,
+ "seeds": 5,
+ "criteria": {
+  "analytic_fit": "<1% (PROTOCOL Sec.4)",
+  "realised_idc": "<25% of analytic (statistical)",
+  "mean_rate": "<2%"
+ },
+ "rows": [
+  {
+   "target_I": 1.0,
+   "analytic_I": 1.0,
+   "fit_rel_err": 0.0,
+   "realised_I_mean5": 0.9785989549320572,
+   "realised_rel_err": 0.021401045067942825,
+   "mean_rate_realised": 25.008389
+  },
+  {
+   "target_I": 40.0,
+   "analytic_I": 40.0,
+   "fit_rel_err": 0.0,
+   "realised_I_mean5": 40.220640747277415,
+   "realised_rel_err": 0.005516018681935364,
+   "mean_rate_realised": 25.014885
+  },
+  {
+   "target_I": 400.0,
+   "analytic_I": 400.0,
+   "fit_rel_err": 0.0,
+   "realised_I_mean5": 426.50704426467155,
+   "realised_rel_err": 0.06626761066167887,
+   "mean_rate_realised": 25.172640999999995
+  },
+  {
+   "target_I": 4000.0,
+   "analytic_I": 4000.000000000001,
+   "fit_rel_err": 2.2737367544323206e-16,
+   "realised_I_mean5": 3800.529439848035,
+   "realised_rel_err": 0.049867640037991455,
+   "mean_rate_realised": 24.878145
+  }
+ ],
+ "pass": true
+}

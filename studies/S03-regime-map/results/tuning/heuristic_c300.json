@@ -1,0 +1,694 @@
+{
+ "family": "heuristic",
+ "cadence_s": 300.0,
+ "best_params": {
+  "target_util": 0.9485783240921518,
+  "scale_down_headroom": 0.4077029563727288,
+  "cooldown_s": 582.7670144163133,
+  "degrade_p95_ratio": 0.6878624940773471,
+  "upgrade_p95_ratio": 0.8441069464032327,
+  "upgrade_persist_windows": 5
+ },
+ "best_U": -0.3621116980099751,
+ "n_trials": 60,
+ "trials": [
+  {
+   "params": {
+    "target_util": 0.4915322517466213,
+    "scale_down_headroom": 0.3948813911434411,
+    "cooldown_s": 114.91247216849692,
+    "degrade_p95_ratio": 0.601850537286937,
+    "upgrade_p95_ratio": 0.7295883679999307,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.3949093590125827
+  },
+  {
+   "params": {
+    "target_util": 0.7143885824283632,
+    "scale_down_headroom": 0.424141880939472,
+    "cooldown_s": 23.43774971331989,
+    "degrade_p95_ratio": 1.0367204067253235,
+    "upgrade_p95_ratio": 0.8565465494547261,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.4271342712363897
+  },
+  {
+   "params": {
+    "target_util": 0.861627367305037,
+    "scale_down_headroom": 0.6202388419962196,
+    "cooldown_s": 30.716199372272214,
+    "degrade_p95_ratio": 1.4786279231984822,
+    "upgrade_p95_ratio": 0.5414010949079002,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.39090451895928474
+  },
+  {
+   "params": {
+    "target_util": 0.6142936058015014,
+    "scale_down_headroom": 0.23394230455704423,
+    "cooldown_s": 178.635430981063,
+    "degrade_p95_ratio": 1.3422633579895416,
+    "upgrade_p95_ratio": 0.41683794883762126,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.379980623185795
+  },
+  {
+   "params": {
+    "target_util": 0.5720148504748199,
+    "scale_down_headroom": 0.1435375485039631,
+    "cooldown_s": 90.54401665240623,
+    "degrade_p95_ratio": 0.5828620253237357,
+    "upgrade_p95_ratio": 0.6744297549629166,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.4359124829443924
+  },
+  {
+   "params": {
+    "target_util": 0.42920301693022295,
+    "scale_down_headroom": 0.5903865495018387,
+    "cooldown_s": 340.7946718347786,
+    "degrade_p95_ratio": 0.6235096238187212,
+    "upgrade_p95_ratio": 0.5359988591445763,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.47969531076683275
+  },
+  {
+   "params": {
+    "target_util": 0.7398955507069243,
+    "scale_down_headroom": 0.1270069721713997,
+    "cooldown_s": 266.99763967204126,
+    "degrade_p95_ratio": 1.8319736512357985,
+    "upgrade_p95_ratio": 0.7378141839962481,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.4469174188589412
+  },
+  {
+   "params": {
+    "target_util": 0.9245120417034056,
+    "scale_down_headroom": 0.47848350504441406,
+    "cooldown_s": 431.2656499346608,
+    "degrade_p95_ratio": 1.6153651477011448,
+    "upgrade_p95_ratio": 0.8101890815085095,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.4124925685514053
+  },
+  {
+   "params": {
+    "target_util": 0.805033477393627,
+    "scale_down_headroom": 0.5946944829269613,
+    "cooldown_s": 497.58285834505693,
+    "degrade_p95_ratio": 0.5437354947797133,
+    "upgrade_p95_ratio": 0.4122995930212676,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3939923362247994
+  },
+  {
+   "params": {
+    "target_util": 0.6384127912823656,
+    "scale_down_headroom": 0.3703672382076946,
+    "cooldown_s": 78.25756932517143,
+    "degrade_p95_ratio": 1.9765752964917083,
+    "upgrade_p95_ratio": 0.15256185753446827,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3718232479030915
+  },
+  {
+   "params": {
+    "target_util": 0.34723334995540706,
+    "scale_down_headroom": 0.2905169956055555,
+    "cooldown_s": 569.8936906112069,
+    "degrade_p95_ratio": 0.9975996086672755,
+    "upgrade_p95_ratio": 0.12913439815724342,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.4340489096724553
+  },
+  {
+   "params": {
+    "target_util": 0.6195984215238785,
+    "scale_down_headroom": 0.2583686869041385,
+    "cooldown_s": 200.2827529600797,
+    "degrade_p95_ratio": 1.9813371793870302,
+    "upgrade_p95_ratio": 0.14668237822257418,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.37732289113638423
+  },
+  {
+   "params": {
+    "target_util": 0.6335562192257408,
+    "scale_down_headroom": 0.3015659860757639,
+    "cooldown_s": 208.3271667741285,
+    "degrade_p95_ratio": 1.9905821127271568,
+    "upgrade_p95_ratio": 0.12066253296407992,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.37436941427262466
+  },
+  {
+   "params": {
+    "target_util": 0.6780742622036207,
+    "scale_down_headroom": 0.3509487138577668,
+    "cooldown_s": 296.44366639294617,
+    "degrade_p95_ratio": 1.9801078640593315,
+    "upgrade_p95_ratio": 0.27044409174021866,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3700065127546019
+  },
+  {
+   "params": {
+    "target_util": 0.7119559613632407,
+    "scale_down_headroom": 0.4962343999011898,
+    "cooldown_s": 307.57986518858746,
+    "degrade_p95_ratio": 1.7231366935879484,
+    "upgrade_p95_ratio": 0.26023149412227803,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3763054830668829
+  },
+  {
+   "params": {
+    "target_util": 0.5081410227731578,
+    "scale_down_headroom": 0.37626488487351734,
+    "cooldown_s": 393.13330566962514,
+    "degrade_p95_ratio": 1.763672521457226,
+    "upgrade_p95_ratio": 0.27065238300914857,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.3937549251172115
+  },
+  {
+   "params": {
+    "target_util": 0.7679088751396667,
+    "scale_down_headroom": 0.6951113013880124,
+    "cooldown_s": 129.79473454256458,
+    "degrade_p95_ratio": 1.9968550075340994,
+    "upgrade_p95_ratio": 0.2648502658225042,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.39505444725194044
+  },
+  {
+   "params": {
+    "target_util": 0.6879642353443163,
+    "scale_down_headroom": 0.3435489399778784,
+    "cooldown_s": 252.09569714135253,
+    "degrade_p95_ratio": 1.5886385568469126,
+    "upgrade_p95_ratio": 0.34326927750876585,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3693466251081127
+  },
+  {
+   "params": {
+    "target_util": 0.8262823409101909,
+    "scale_down_headroom": 0.06675777767991165,
+    "cooldown_s": 287.55982405429415,
+    "degrade_p95_ratio": 1.2709692032766329,
+    "upgrade_p95_ratio": 0.37874820859904657,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.37739717921915533
+  },
+  {
+   "params": {
+    "target_util": 0.9324191756609153,
+    "scale_down_headroom": 0.20260204013796412,
+    "cooldown_s": 367.1152542583294,
+    "degrade_p95_ratio": 1.5346368554839682,
+    "upgrade_p95_ratio": 0.3374921382539784,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.3696721091293374
+  },
+  {
+   "params": {
+    "target_util": 0.9373508755067945,
+    "scale_down_headroom": 0.20598831626381006,
+    "cooldown_s": 393.26538826649943,
+    "degrade_p95_ratio": 1.5172963741365553,
+    "upgrade_p95_ratio": 0.5191591369274235,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.40414797858699125
+  },
+  {
+   "params": {
+    "target_util": 0.6706202164107133,
+    "scale_down_headroom": 0.3301981790650551,
+    "cooldown_s": 254.42882667229077,
+    "degrade_p95_ratio": 1.3294357384777937,
+    "upgrade_p95_ratio": 0.348405177054502,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3710849457739231
+  },
+  {
+   "params": {
+    "target_util": 0.5336474158859102,
+    "scale_down_headroom": 0.18865294206110572,
+    "cooldown_s": 349.35920491250835,
+    "degrade_p95_ratio": 1.609648270802011,
+    "upgrade_p95_ratio": 0.31436848257421357,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.39569563172094857
+  },
+  {
+   "params": {
+    "target_util": 0.8894193196438909,
+    "scale_down_headroom": 0.43773429020903554,
+    "cooldown_s": 457.8565547521032,
+    "degrade_p95_ratio": 1.0858430373499377,
+    "upgrade_p95_ratio": 0.18756697467460517,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.36304518754228227
+  },
+  {
+   "params": {
+    "target_util": 0.8791436061860085,
+    "scale_down_headroom": 0.4677286760198033,
+    "cooldown_s": 482.52656534589795,
+    "degrade_p95_ratio": 1.0246096917731262,
+    "upgrade_p95_ratio": 0.20447652953078627,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.3632785880829949
+  },
+  {
+   "params": {
+    "target_util": 0.8617383957313305,
+    "scale_down_headroom": 0.48408343434666695,
+    "cooldown_s": 463.431666843792,
+    "degrade_p95_ratio": 0.9213544943297267,
+    "upgrade_p95_ratio": 0.2030210365706318,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.36294525474966155
+  },
+  {
+   "params": {
+    "target_util": 0.8708751256465534,
+    "scale_down_headroom": 0.5048507843847361,
+    "cooldown_s": 481.56437087350713,
+    "degrade_p95_ratio": 0.847275879818834,
+    "upgrade_p95_ratio": 0.18837620437267938,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.37764441903589646
+  },
+  {
+   "params": {
+    "target_util": 0.8842554555851025,
+    "scale_down_headroom": 0.43756491957489496,
+    "cooldown_s": 536.6986366902364,
+    "degrade_p95_ratio": 1.128004393494606,
+    "upgrade_p95_ratio": 0.20269643755628522,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.36361661611371077
+  },
+  {
+   "params": {
+    "target_util": 0.7970036856408143,
+    "scale_down_headroom": 0.5400247946483099,
+    "cooldown_s": 452.7562954324261,
+    "degrade_p95_ratio": 0.8115379599432772,
+    "upgrade_p95_ratio": 0.20126430176606053,
+    "upgrade_persist_windows": 3
+   },
+   "U": -0.3925869127712692
+  },
+  {
+   "params": {
+    "target_util": 0.8326557188966076,
+    "scale_down_headroom": 0.4305384480528831,
+    "cooldown_s": 582.7829868037403,
+    "degrade_p95_ratio": 0.8500871199802209,
+    "upgrade_p95_ratio": 0.10181102931193865,
+    "upgrade_persist_windows": 4
+   },
+   "U": -0.36412098973793816
+  },
+  {
+   "params": {
+    "target_util": 0.7717459331105314,
+    "scale_down_headroom": 0.538245915865797,
+    "cooldown_s": 522.4417344870872,
+    "degrade_p95_ratio": 0.7207538588371825,
+    "upgrade_p95_ratio": 0.2219468871275573,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.3959556417301553
+  },
+  {
+   "params": {
+    "target_util": 0.8882161449789049,
+    "scale_down_headroom": 0.43601438821472815,
+    "cooldown_s": 550.8895340251909,
+    "degrade_p95_ratio": 1.107960465320737,
+    "upgrade_p95_ratio": 0.20311340108418247,
+    "upgrade_persist_windows": 2
+   },
+   "U": -0.36304518754228227
+  },
+  {
+   "params": {
+    "target_util": 0.8987352865467698,
+    "scale_down_headroom": 0.4584793312384216,
+    "cooldown_s": 446.9057116666096,
+    "degrade_p95_ratio": 0.9998516562978171,
+    "upgrade_p95_ratio": 0.169710979783269,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.36273776094470017
+  },
+  {
+   "params": {
+    "target_util": 0.9057770426700469,
+    "scale_down_headroom": 0.4087145447158022,
+    "cooldown_s": 429.9681628444006,
+    "degrade_p95_ratio": 1.116319936247888,
+    "upgrade_p95_ratio": 0.16155416171695228,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3627463786349803
+  },
+  {
+   "params": {
+    "target_util": 0.8447497769482984,
+    "scale_down_headroom": 0.4034227851000652,
+    "cooldown_s": 436.16789214789026,
+    "degrade_p95_ratio": 0.9383633874990588,
+    "upgrade_p95_ratio": 0.16808454432205797,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.36412098973793816
+  },
+  {
+   "params": {
+    "target_util": 0.8999626772578913,
+    "scale_down_headroom": 0.40351110194162676,
+    "cooldown_s": 416.1174215815658,
+    "degrade_p95_ratio": 1.1741286281258172,
+    "upgrade_p95_ratio": 0.10219511972913382,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3627463786349803
+  },
+  {
+   "params": {
+    "target_util": 0.9420123939301863,
+    "scale_down_headroom": 0.5649477294625137,
+    "cooldown_s": 402.8878361272103,
+    "degrade_p95_ratio": 1.2607721765883173,
+    "upgrade_p95_ratio": 0.11104884952779784,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3909434936173696
+  },
+  {
+   "params": {
+    "target_util": 0.8976574660278276,
+    "scale_down_headroom": 0.4021508784322989,
+    "cooldown_s": 418.19570234495444,
+    "degrade_p95_ratio": 1.1916542234698513,
+    "upgrade_p95_ratio": 0.46403454825902524,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.41144848077710405
+  },
+  {
+   "params": {
+    "target_util": 0.8463224995926106,
+    "scale_down_headroom": 0.6690628079876405,
+    "cooldown_s": 502.3670891635418,
+    "degrade_p95_ratio": 1.4342294181857576,
+    "upgrade_p95_ratio": 0.23483789351395845,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.39342762213965177
+  },
+  {
+   "params": {
+    "target_util": 0.7955671236867454,
+    "scale_down_headroom": 0.5262034124323952,
+    "cooldown_s": 363.95074583395973,
+    "degrade_p95_ratio": 0.9273384998729421,
+    "upgrade_p95_ratio": 0.15865500568763072,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3896915909324988
+  },
+  {
+   "params": {
+    "target_util": 0.9115583881980872,
+    "scale_down_headroom": 0.474010258707688,
+    "cooldown_s": 461.48198658052746,
+    "degrade_p95_ratio": 0.699484063682456,
+    "upgrade_p95_ratio": 0.28283132602237737,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3621118967704745
+  },
+  {
+   "params": {
+    "target_util": 0.9119221566427507,
+    "scale_down_headroom": 0.4814011921780919,
+    "cooldown_s": 461.3985525962713,
+    "degrade_p95_ratio": 0.7813753129111752,
+    "upgrade_p95_ratio": 0.3078828861750624,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3654296234905688
+  },
+  {
+   "params": {
+    "target_util": 0.8597782140096029,
+    "scale_down_headroom": 0.4638644620388264,
+    "cooldown_s": 323.648287969242,
+    "degrade_p95_ratio": 0.6455823923194706,
+    "upgrade_p95_ratio": 0.24363254302054346,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3634461693562938
+  },
+  {
+   "params": {
+    "target_util": 0.9441975817756372,
+    "scale_down_headroom": 0.5769402757123777,
+    "cooldown_s": 509.5843477440526,
+    "degrade_p95_ratio": 0.9295743499851158,
+    "upgrade_p95_ratio": 0.290606482144245,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3922175077700863
+  },
+  {
+   "params": {
+    "target_util": 0.904533341066667,
+    "scale_down_headroom": 0.6180450312497464,
+    "cooldown_s": 425.9459186348933,
+    "degrade_p95_ratio": 0.7196276067862724,
+    "upgrade_p95_ratio": 0.6056146289792503,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.4301392916659296
+  },
+  {
+   "params": {
+    "target_util": 0.7524003474020352,
+    "scale_down_headroom": 0.3906003435703018,
+    "cooldown_s": 372.33992476031756,
+    "degrade_p95_ratio": 1.1917689169819172,
+    "upgrade_p95_ratio": 0.1496197648420631,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.37005340968867606
+  },
+  {
+   "params": {
+    "target_util": 0.8151050554961673,
+    "scale_down_headroom": 0.3179122939785286,
+    "cooldown_s": 472.57884450159884,
+    "degrade_p95_ratio": 0.9913406767712373,
+    "upgrade_p95_ratio": 0.3941019302438752,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3735995311110421
+  },
+  {
+   "params": {
+    "target_util": 0.8572336146133278,
+    "scale_down_headroom": 0.5073318119574959,
+    "cooldown_s": 436.28901995138153,
+    "degrade_p95_ratio": 1.1861174996289068,
+    "upgrade_p95_ratio": 0.1357294516121073,
+    "upgrade_persist_windows": 1
+   },
+   "U": -0.3797208552149449
+  },
+  {
+   "params": {
+    "target_util": 0.917686595246282,
+    "scale_down_headroom": 0.3647568132292783,
+    "cooldown_s": 545.5909071395332,
+    "degrade_p95_ratio": 0.5461643732583897,
+    "upgrade_p95_ratio": 0.16896288462990916,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3624389520373983
+  },
+  {
+   "params": {
+    "target_util": 0.9157070945913147,
+    "scale_down_headroom": 0.2854721973084721,
+    "cooldown_s": 525.6505008173928,
+    "degrade_p95_ratio": 0.5019176904622173,
+    "upgrade_p95_ratio": 0.16159596142692056,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3634039648687519
+  },
+  {
+   "params": {
+    "target_util": 0.9104391305580112,
+    "scale_down_headroom": 0.37045776658637053,
+    "cooldown_s": 567.3988472070838,
+    "degrade_p95_ratio": 0.6060668985847883,
+    "upgrade_p95_ratio": 0.10129345595042259,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3627463786349803
+  },
+  {
+   "params": {
+    "target_util": 0.9143262590838442,
+    "scale_down_headroom": 0.36731131476847967,
+    "cooldown_s": 597.1076434324938,
+    "degrade_p95_ratio": 0.6182568760702867,
+    "upgrade_p95_ratio": 0.10404628174742184,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3624389520373983
+  },
+  {
+   "params": {
+    "target_util": 0.9485783240921518,
+    "scale_down_headroom": 0.4077029563727288,
+    "cooldown_s": 582.7670144163133,
+    "degrade_p95_ratio": 0.6878624940773471,
+    "upgrade_p95_ratio": 0.8441069464032327,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3621116980099751
+  },
+  {
+   "params": {
+    "target_util": 0.947642267181642,
+    "scale_down_headroom": 0.36326826379197347,
+    "cooldown_s": 596.3636197730638,
+    "degrade_p95_ratio": 0.6707900888313045,
+    "upgrade_p95_ratio": 0.8936900218677485,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3621116980099751
+  },
+  {
+   "params": {
+    "target_util": 0.9493284707296017,
+    "scale_down_headroom": 0.34906826481281483,
+    "cooldown_s": 599.2938926664795,
+    "degrade_p95_ratio": 0.6603620169776224,
+    "upgrade_p95_ratio": 0.8678542213746518,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3625175806616937
+  },
+  {
+   "params": {
+    "target_util": 0.9464353304963,
+    "scale_down_headroom": 0.2611757258868091,
+    "cooldown_s": 598.9926587482763,
+    "degrade_p95_ratio": 0.6775354101389994,
+    "upgrade_p95_ratio": 0.872287641656605,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.364131584345807
+  },
+  {
+   "params": {
+    "target_util": 0.40523999572735125,
+    "scale_down_headroom": 0.36755319665353037,
+    "cooldown_s": 555.5370893343661,
+    "degrade_p95_ratio": 0.5697251408141336,
+    "upgrade_p95_ratio": 0.8068278158752106,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.41210879139669404
+  },
+  {
+   "params": {
+    "target_util": 0.9301411182748255,
+    "scale_down_headroom": 0.3102586247594209,
+    "cooldown_s": 587.6628992449778,
+    "degrade_p95_ratio": 0.5033524832759072,
+    "upgrade_p95_ratio": 0.8344140135186576,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3626916182104217
+  },
+  {
+   "params": {
+    "target_util": 0.9228121117608516,
+    "scale_down_headroom": 0.3431754374232813,
+    "cooldown_s": 547.0657441121409,
+    "degrade_p95_ratio": 0.7244284936682986,
+    "upgrade_p95_ratio": 0.7482925454215372,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.3632258404369216
+  },
+  {
+   "params": {
+    "target_util": 0.9474789081682627,
+    "scale_down_headroom": 0.2737441068174151,
+    "cooldown_s": 572.6522833479115,
+    "degrade_p95_ratio": 0.6615498489701517,
+    "upgrade_p95_ratio": 0.7071718632051007,
+    "upgrade_persist_windows": 5
+   },
+   "U": -0.36279503040055744
+  }
+ ],
+ "wall_s": 69.86342787742615,
+ "cal_seeds": [
+  1000,
+  1001,
+  1002,
+  1003,
+  1004,
+  1005,
+  1006,
+  1007,
+  1008,
+  1009
+ ],
+ "cal_I": [
+  1.0,
+  400.0,
+  1000.0
+ ]
+}

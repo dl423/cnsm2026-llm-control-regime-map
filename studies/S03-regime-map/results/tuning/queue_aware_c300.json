@@ -1,0 +1,633 @@
+{
+ "family": "queue_aware",
+ "cadence_s": 300.0,
+ "best_params": {
+  "drain_target_s": 509.4625577099791,
+  "target_util": 0.9488853528281769,
+  "hold_queue_len": 13,
+  "cooldown_s": 166.8304369979316,
+  "upgrade_p95_ratio": 0.1424734539751232
+ },
+ "best_U": -0.35880141929378023,
+ "n_trials": 60,
+ "trials": [
+  {
+   "params": {
+    "drain_target_s": 180.32567659883028,
+    "target_util": 0.6448813911434411,
+    "hold_queue_len": 4,
+    "cooldown_s": 40.74021491477482,
+    "upgrade_p95_ratio": 0.7295883679999307
+   },
+   "U": -0.5467273998500849
+  },
+  {
+   "params": {
+    "drain_target_s": 395.518445456634,
+    "target_util": 0.7143885824283632,
+    "hold_queue_len": 12,
+    "cooldown_s": 23.43774971331989,
+    "upgrade_p95_ratio": 0.3862508835868391
+   },
+   "U": -0.3786905449899711
+  },
+  {
+   "params": {
+    "drain_target_s": 567.6814961569526,
+    "target_util": 0.33902904220500046,
+    "hold_queue_len": 18,
+    "cooldown_s": 526.3743156888181,
+    "upgrade_p95_ratio": 0.14095493249636296
+   },
+   "U": -0.4471631487465417
+  },
+  {
+   "params": {
+    "drain_target_s": 393.1890762020646,
+    "target_util": 0.6586383896126689,
+    "hold_queue_len": 12,
+    "cooldown_s": 290.1171745860013,
+    "upgrade_p95_ratio": 0.32639052868559293
+   },
+   "U": -0.37893218054331007
+  },
+  {
+   "params": {
+    "drain_target_s": 182.14680238955413,
+    "target_util": 0.6649807884621346,
+    "hold_queue_len": 8,
+    "cooldown_s": 473.2204258073398,
+    "upgrade_p95_ratio": 0.43478750827670154
+   },
+   "U": -0.46426628162644396
+  },
+  {
+   "params": {
+    "drain_target_s": 90.62283286132009,
+    "target_util": 0.39808935137344004,
+    "hold_queue_len": 1,
+    "cooldown_s": 430.82231622218745,
+    "upgrade_p95_ratio": 0.3338538836033108
+   },
+   "U": -0.43809667673727914
+  },
+  {
+   "params": {
+    "drain_target_s": 123.2704539592041,
+    "target_util": 0.8403865495018386,
+    "hold_queue_len": 11,
+    "cooldown_s": 49.40384952748846,
+    "upgrade_p95_ratio": 0.5359988591445763
+   },
+   "U": -0.5187501937687568
+  },
+  {
+   "params": {
+    "drain_target_s": 99.58045301752888,
+    "target_util": 0.7398955507069243,
+    "hold_queue_len": 2,
+    "cooldown_s": 266.99763967204126,
+    "upgrade_p95_ratio": 0.8103859473257592
+   },
+   "U": -0.542856980835989
+  },
+  {
+   "params": {
+    "drain_target_s": 479.37429934720956,
+    "target_util": 0.34418617337135715,
+    "hold_queue_len": 20,
+    "cooldown_s": 395.52323542561305,
+    "upgrade_p95_ratio": 0.6750208665795477
+   },
+   "U": -0.6004130181201983
+  },
+  {
+   "params": {
+    "drain_target_s": 447.42817525478745,
+    "target_util": 0.8770286287256639,
+    "hold_queue_len": 2,
+    "cooldown_s": 466.18474836334815,
+    "upgrade_p95_ratio": 0.7703932097562601
+   },
+   "U": -0.5232669827140362
+  },
+  {
+   "params": {
+    "drain_target_s": 296.005530380969,
+    "target_util": 0.5061234236972999,
+    "hold_queue_len": 16,
+    "cooldown_s": 161.13271207202834,
+    "upgrade_p95_ratio": 0.12913439815724342
+   },
+   "U": -0.39867099718982973
+  },
+  {
+   "params": {
+    "drain_target_s": 336.442708313329,
+    "target_util": 0.5651345013259872,
+    "hold_queue_len": 12,
+    "cooldown_s": 289.4382849443955,
+    "upgrade_p95_ratio": 0.3077901408954838
+   },
+   "U": -0.38707854134119873
+  },
+  {
+   "params": {
+    "drain_target_s": 350.90416311705474,
+    "target_util": 0.7544576397969073,
+    "hold_queue_len": 13,
+    "cooldown_s": 155.6815759540676,
+    "upgrade_p95_ratio": 0.28711139086465365
+   },
+   "U": -0.370449155648604
+  },
+  {
+   "params": {
+    "drain_target_s": 289.80808665482476,
+    "target_util": 0.9486426991421191,
+    "hold_queue_len": 8,
+    "cooldown_s": 132.70134151364675,
+    "upgrade_p95_ratio": 0.5468109480530874
+   },
+   "U": -0.5053634750145348
+  },
+  {
+   "params": {
+    "drain_target_s": 568.3958757184269,
+    "target_util": 0.7454879781846269,
+    "hold_queue_len": 14,
+    "cooldown_s": 3.7569632246270714,
+    "upgrade_p95_ratio": 0.23224708946420475
+   },
+   "U": -0.36789826372124235
+  },
+  {
+   "params": {
+    "drain_target_s": 534.8690913924025,
+    "target_util": 0.7959016654095558,
+    "hold_queue_len": 16,
+    "cooldown_s": 144.43187857143198,
+    "upgrade_p95_ratio": 0.22697744963382538
+   },
+   "U": -0.36550111158932885
+  },
+  {
+   "params": {
+    "drain_target_s": 597.609991983763,
+    "target_util": 0.8431008784135821,
+    "hold_queue_len": 16,
+    "cooldown_s": 103.91576281852852,
+    "upgrade_p95_ratio": 0.212456141765268
+   },
+   "U": -0.36340108200341603
+  },
+  {
+   "params": {
+    "drain_target_s": 597.2407368058091,
+    "target_util": 0.8501766738602006,
+    "hold_queue_len": 16,
+    "cooldown_s": 222.84684380686411,
+    "upgrade_p95_ratio": 0.20633526304372904
+   },
+   "U": -0.36340108200341603
+  },
+  {
+   "params": {
+    "drain_target_s": 493.6209611825151,
+    "target_util": 0.9225300038749564,
+    "hold_queue_len": 20,
+    "cooldown_s": 225.05065812211095,
+    "upgrade_p95_ratio": 0.1025967715839507
+   },
+   "U": -0.3604630023853794
+  },
+  {
+   "params": {
+    "drain_target_s": 491.9989221279345,
+    "target_util": 0.884600761474848,
+    "hold_queue_len": 20,
+    "cooldown_s": 356.4342858412291,
+    "upgrade_p95_ratio": 0.10356179172413318
+   },
+   "U": -0.3636471597733331
+  },
+  {
+   "params": {
+    "drain_target_s": 507.3251212507738,
+    "target_util": 0.9499001215003392,
+    "hold_queue_len": 18,
+    "cooldown_s": 97.40805133517368,
+    "upgrade_p95_ratio": 0.8783620623518958
+   },
+   "U": -0.5164509828526413
+  },
+  {
+   "params": {
+    "drain_target_s": 599.2461078205769,
+    "target_util": 0.8406221063429491,
+    "hold_queue_len": 17,
+    "cooldown_s": 219.02419649104715,
+    "upgrade_p95_ratio": 0.20135413609635788
+   },
+   "U": -0.3635864915175029
+  },
+  {
+   "params": {
+    "drain_target_s": 440.53826749080923,
+    "target_util": 0.8903367330178544,
+    "hold_queue_len": 15,
+    "cooldown_s": 219.7124399805602,
+    "upgrade_p95_ratio": 0.18567244985692372
+   },
+   "U": -0.3617488400365021
+  },
+  {
+   "params": {
+    "drain_target_s": 446.96863654151343,
+    "target_util": 0.9206573837682088,
+    "hold_queue_len": 14,
+    "cooldown_s": 204.84498657300455,
+    "upgrade_p95_ratio": 0.19449223247192218
+   },
+   "U": -0.3604630023853794
+  },
+  {
+   "params": {
+    "drain_target_s": 441.1900518509948,
+    "target_util": 0.8958677063000772,
+    "hold_queue_len": 9,
+    "cooldown_s": 206.4198679440107,
+    "upgrade_p95_ratio": 0.17077057599770182
+   },
+   "U": -0.3619342495505889
+  },
+  {
+   "params": {
+    "drain_target_s": 425.7953146499349,
+    "target_util": 0.9373829727004502,
+    "hold_queue_len": 14,
+    "cooldown_s": 324.46311045981224,
+    "upgrade_p95_ratio": 0.26803935450669336
+   },
+   "U": -0.36324511680788757
+  },
+  {
+   "params": {
+    "drain_target_s": 14.166628228268621,
+    "target_util": 0.7947443229574804,
+    "hold_queue_len": 19,
+    "cooldown_s": 252.31168800129223,
+    "upgrade_p95_ratio": 0.1082453318842201
+   },
+   "U": -0.3846252247352889
+  },
+  {
+   "params": {
+    "drain_target_s": 369.61412514825207,
+    "target_util": 0.9142506655175349,
+    "hold_queue_len": 14,
+    "cooldown_s": 182.73304424310547,
+    "upgrade_p95_ratio": 0.4576621761855305
+   },
+   "U": -0.4733639798088506
+  },
+  {
+   "params": {
+    "drain_target_s": 525.3494981749268,
+    "target_util": 0.7998564767850298,
+    "hold_queue_len": 9,
+    "cooldown_s": 588.5865474148992,
+    "upgrade_p95_ratio": 0.16773950298590679
+   },
+   "U": -0.3662300435480652
+  },
+  {
+   "params": {
+    "drain_target_s": 260.69373862364637,
+    "target_util": 0.8972772862896046,
+    "hold_queue_len": 5,
+    "cooldown_s": 345.4757210872075,
+    "upgrade_p95_ratio": 0.3669249112236186
+   },
+   "U": -0.3741364190777031
+  },
+  {
+   "params": {
+    "drain_target_s": 461.32605689157594,
+    "target_util": 0.8679411363006319,
+    "hold_queue_len": 6,
+    "cooldown_s": 87.45129500717991,
+    "upgrade_p95_ratio": 0.2584522570653999
+   },
+   "U": -0.36417189607668343
+  },
+  {
+   "params": {
+    "drain_target_s": 444.939880579106,
+    "target_util": 0.9029750106616137,
+    "hold_queue_len": 11,
+    "cooldown_s": 206.20598011504256,
+    "upgrade_p95_ratio": 0.16578447196602122
+   },
+   "U": -0.3619342495505889
+  },
+  {
+   "params": {
+    "drain_target_s": 412.7824236186196,
+    "target_util": 0.811852924366548,
+    "hold_queue_len": 9,
+    "cooldown_s": 240.61019287319388,
+    "upgrade_p95_ratio": 0.17267161534746464
+   },
+   "U": -0.36454763141387586
+  },
+  {
+   "params": {
+    "drain_target_s": 380.7568714043619,
+    "target_util": 0.912013580557279,
+    "hold_queue_len": 18,
+    "cooldown_s": 178.33164011176478,
+    "upgrade_p95_ratio": 0.15291733349686143
+   },
+   "U": -0.36144141343892006
+  },
+  {
+   "params": {
+    "drain_target_s": 363.78373654463564,
+    "target_util": 0.9234166937037774,
+    "hold_queue_len": 18,
+    "cooldown_s": 305.8689356433464,
+    "upgrade_p95_ratio": 0.10373843155064023
+   },
+   "U": -0.36312322688411525
+  },
+  {
+   "params": {
+    "drain_target_s": 401.87786894276786,
+    "target_util": 0.813465923415602,
+    "hold_queue_len": 19,
+    "cooldown_s": 182.74544900260457,
+    "upgrade_p95_ratio": 0.2584599889450766
+   },
+   "U": -0.3649707429306171
+  },
+  {
+   "params": {
+    "drain_target_s": 314.1390384965209,
+    "target_util": 0.8695310925028803,
+    "hold_queue_len": 15,
+    "cooldown_s": 57.30689650605831,
+    "upgrade_p95_ratio": 0.3666406535912714
+   },
+   "U": -0.37236283198159753
+  },
+  {
+   "params": {
+    "drain_target_s": 255.8619438439765,
+    "target_util": 0.713284897186814,
+    "hold_queue_len": 18,
+    "cooldown_s": 260.5169443211471,
+    "upgrade_p95_ratio": 0.15087693278601055
+   },
+   "U": -0.37091920506106874
+  },
+  {
+   "params": {
+    "drain_target_s": 385.8178424930506,
+    "target_util": 0.9215949537352374,
+    "hold_queue_len": 17,
+    "cooldown_s": 124.24425586335263,
+    "upgrade_p95_ratio": 0.42641414006918493
+   },
+   "U": -0.4312776557830346
+  },
+  {
+   "params": {
+    "drain_target_s": 477.7629616764431,
+    "target_util": 0.7753232200483816,
+    "hold_queue_len": 20,
+    "cooldown_s": 186.5426536022244,
+    "upgrade_p95_ratio": 0.31536488734201046
+   },
+   "U": -0.3716887506046581
+  },
+  {
+   "params": {
+    "drain_target_s": 539.5641353540332,
+    "target_util": 0.8415397218801225,
+    "hold_queue_len": 15,
+    "cooldown_s": 280.3907725386542,
+    "upgrade_p95_ratio": 0.14103529092898406
+   },
+   "U": -0.36425315818416953
+  },
+  {
+   "params": {
+    "drain_target_s": 432.12783470200316,
+    "target_util": 0.8969841379038762,
+    "hold_queue_len": 10,
+    "cooldown_s": 205.3947129195679,
+    "upgrade_p95_ratio": 0.18732974091930826
+   },
+   "U": -0.3619342495505889
+  },
+  {
+   "params": {
+    "drain_target_s": 473.51077054573847,
+    "target_util": 0.8844914817953913,
+    "hold_queue_len": 19,
+    "cooldown_s": 232.0375278609527,
+    "upgrade_p95_ratio": 0.24468423801869776
+   },
+   "U": -0.36250560194126397
+  },
+  {
+   "params": {
+    "drain_target_s": 509.4625577099791,
+    "target_util": 0.9488853528281769,
+    "hold_queue_len": 13,
+    "cooldown_s": 166.8304369979316,
+    "upgrade_p95_ratio": 0.1424734539751232
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 557.439115775324,
+    "target_util": 0.9451996545288996,
+    "hold_queue_len": 13,
+    "cooldown_s": 166.88823766128007,
+    "upgrade_p95_ratio": 0.13294021282004825
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 558.9141881570343,
+    "target_util": 0.9281182107793832,
+    "hold_queue_len": 12,
+    "cooldown_s": 165.172565620065,
+    "upgrade_p95_ratio": 0.13213462710518106
+   },
+   "U": -0.3604630023853794
+  },
+  {
+   "params": {
+    "drain_target_s": 571.5415280015461,
+    "target_util": 0.9454986522393956,
+    "hold_queue_len": 13,
+    "cooldown_s": 68.03047920883881,
+    "upgrade_p95_ratio": 0.12618960964250708
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 501.8828858738017,
+    "target_util": 0.9448935803278742,
+    "hold_queue_len": 13,
+    "cooldown_s": 67.15002739226026,
+    "upgrade_p95_ratio": 0.10091806111531043
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 509.6874517765621,
+    "target_util": 0.9495009839190648,
+    "hold_queue_len": 12,
+    "cooldown_s": 60.55964348607469,
+    "upgrade_p95_ratio": 0.10161554080036037
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 564.2661889759439,
+    "target_util": 0.9453332514110632,
+    "hold_queue_len": 12,
+    "cooldown_s": 30.958688670323312,
+    "upgrade_p95_ratio": 0.12888136504339193
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 517.8228824778904,
+    "target_util": 0.4585440340148882,
+    "hold_queue_len": 13,
+    "cooldown_s": 47.20587637566253,
+    "upgrade_p95_ratio": 0.6486229876072009
+   },
+   "U": -0.5746800973427121
+  },
+  {
+   "params": {
+    "drain_target_s": 557.2247584319922,
+    "target_util": 0.9477351178449661,
+    "hold_queue_len": 11,
+    "cooldown_s": 16.64391710723085,
+    "upgrade_p95_ratio": 0.13503739156368214
+   },
+   "U": -0.35898682880786714
+  },
+  {
+   "params": {
+    "drain_target_s": 575.0528857391217,
+    "target_util": 0.8667110344927459,
+    "hold_queue_len": 12,
+    "cooldown_s": 74.31932252451172,
+    "upgrade_p95_ratio": 0.12601357247427483
+   },
+   "U": -0.36225005369327873
+  },
+  {
+   "params": {
+    "drain_target_s": 542.9892220911807,
+    "target_util": 0.9478826397211478,
+    "hold_queue_len": 13,
+    "cooldown_s": 121.44337921573151,
+    "upgrade_p95_ratio": 0.2330869952898181
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 506.7508301291909,
+    "target_util": 0.8625453411043082,
+    "hold_queue_len": 11,
+    "cooldown_s": 20.8698145496883,
+    "upgrade_p95_ratio": 0.28821175769837404
+   },
+   "U": -0.3639012759168484
+  },
+  {
+   "params": {
+    "drain_target_s": 574.6119157273274,
+    "target_util": 0.6012882834688834,
+    "hold_queue_len": 10,
+    "cooldown_s": 72.36043672420209,
+    "upgrade_p95_ratio": 0.2182502231699766
+   },
+   "U": -0.3757459081710097
+  },
+  {
+   "params": {
+    "drain_target_s": 499.1335473722518,
+    "target_util": 0.9499624783660604,
+    "hold_queue_len": 13,
+    "cooldown_s": 38.93215990169645,
+    "upgrade_p95_ratio": 0.12990054833078357
+   },
+   "U": -0.35880141929378023
+  },
+  {
+   "params": {
+    "drain_target_s": 527.9918530291294,
+    "target_util": 0.8256197240936395,
+    "hold_queue_len": 12,
+    "cooldown_s": 114.7005169577897,
+    "upgrade_p95_ratio": 0.10986102994473289
+   },
+   "U": -0.36425315818416953
+  },
+  {
+   "params": {
+    "drain_target_s": 579.663180693269,
+    "target_util": 0.9225499908794218,
+    "hold_queue_len": 10,
+    "cooldown_s": 4.122252116208358,
+    "upgrade_p95_ratio": 0.2019242928100452
+   },
+   "U": -0.3606484118994663
+  },
+  {
+   "params": {
+    "drain_target_s": 558.385480274152,
+    "target_util": 0.8757556063427568,
+    "hold_queue_len": 13,
+    "cooldown_s": 140.45612088910462,
+    "upgrade_p95_ratio": 0.15759322819635335
+   },
+   "U": -0.3619869352745973
+  }
+ ],
+ "wall_s": 69.35741329193115,
+ "cal_seeds": [
+  1000,
+  1001,
+  1002,
+  1003,
+  1004,
+  1005,
+  1006,
+  1007,
+  1008,
+  1009
+ ],
+ "cal_I": [
+  1.0,
+  400.0,
+  1000.0
+ ]
+}

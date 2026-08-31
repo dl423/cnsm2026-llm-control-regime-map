@@ -1,0 +1,69 @@
+{
+ "local_models": [
+  {
+   "alias": "full-3B",
+   "filename": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+   "source_repository": "bartowski/Llama-3.2-3B-Instruct-GGUF",
+   "source_url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/blob/c346bfc2029e79ba6d7edf026cf01fe44242db0d/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+   "revision": "c346bfc2029e79ba6d7edf026cf01fe44242db0d",
+   "bytes": 2019377696,
+   "sha256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+   "quantization": "Q4_K_M",
+   "upstream_license": "Llama 3.2 Community License"
+  },
+  {
+   "alias": "lite-1B",
+   "filename": "Llama-3.2-1B-Instruct-Q8_0.gguf",
+   "source_repository": "bartowski/Llama-3.2-1B-Instruct-GGUF",
+   "source_url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/blob/2f1155149714fcb749f4933a752f69be3031ea6f/Llama-3.2-1B-Instruct-Q8_0.gguf",
+   "revision": "2f1155149714fcb749f4933a752f69be3031ea6f",
+   "bytes": 1321083008,
+   "sha256": "432f310a77f4650a88d0fd59ecdd7cebed8d684bafea53cbff0473542964f0c3",
+   "quantization": "Q8_0",
+   "upstream_license": "Llama 3.2 Community License"
+  },
+  {
+   "alias": "tiny-1B4",
+   "filename": "Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+   "source_repository": "bartowski/Llama-3.2-1B-Instruct-GGUF",
+   "source_url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/blob/9971ce1bbba2f8b55de026a783323a808b3eeedb/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+   "revision": "9971ce1bbba2f8b55de026a783323a808b3eeedb",
+   "bytes": 807694464,
+   "sha256": "6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83",
+   "quantization": "Q4_K_M",
+   "upstream_license": "Llama 3.2 Community License"
+  }
+ ],
+ "hosted_models": [
+  {
+   "vendor": "OpenAI",
+   "model_id": "gpt-5.6-luna",
+   "api": "Chat Completions",
+   "experiment_dates": [
+    "2026-08-02",
+    "2026-08-03"
+   ],
+   "provider_snapshot_available": false,
+   "provider_fingerprint_recorded": false,
+   "controls_tested": [
+    "provider default",
+    "seed=42"
+   ]
+  },
+  {
+   "vendor": "Anthropic",
+   "model_id": "claude-sonnet-5",
+   "api_version": "2023-06-01",
+   "experiment_dates": [
+    "2026-08-02",
+    "2026-08-03"
+   ],
+   "provider_snapshot_available": false,
+   "provider_fingerprint_recorded": false,
+   "controls_tested": [
+    "provider default"
+   ],
+   "control_probe_note": "Non-default sampling controls were rejected by the API; verbatim evidence is in results/rq2_determinism_probe.json."
+  }
+ ]
+}

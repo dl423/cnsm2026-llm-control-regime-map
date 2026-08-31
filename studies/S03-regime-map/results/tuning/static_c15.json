@@ -1,0 +1,119 @@
+{
+ "family": "static",
+ "cadence_s": 15.0,
+ "best_params": {
+  "replicas": 2,
+  "variant": "tiny-1B4"
+ },
+ "best_U": -0.3638717060094374,
+ "trials": [
+  {
+   "replicas": 1,
+   "variant": "tiny-1B4",
+   "U": -0.39414140673278014
+  },
+  {
+   "replicas": 1,
+   "variant": "lite-1B",
+   "U": -0.472097408048717
+  },
+  {
+   "replicas": 1,
+   "variant": "full-3B",
+   "U": -0.5207374216977526
+  },
+  {
+   "replicas": 2,
+   "variant": "tiny-1B4",
+   "U": -0.3638717060094374
+  },
+  {
+   "replicas": 2,
+   "variant": "lite-1B",
+   "U": -0.3678921490085079
+  },
+  {
+   "replicas": 2,
+   "variant": "full-3B",
+   "U": -0.5183928939407942
+  },
+  {
+   "replicas": 3,
+   "variant": "tiny-1B4",
+   "U": -0.4090936823333226
+  },
+  {
+   "replicas": 3,
+   "variant": "lite-1B",
+   "U": -0.41219184862627734
+  },
+  {
+   "replicas": 3,
+   "variant": "full-3B",
+   "U": -0.5539164774014012
+  },
+  {
+   "replicas": 4,
+   "variant": "tiny-1B4",
+   "U": -0.46142371108102703
+  },
+  {
+   "replicas": 4,
+   "variant": "lite-1B",
+   "U": -0.46571036444806596
+  },
+  {
+   "replicas": 4,
+   "variant": "full-3B",
+   "U": -0.6100860765749295
+  },
+  {
+   "replicas": 5,
+   "variant": "tiny-1B4",
+   "U": -0.5086391587078973
+  },
+  {
+   "replicas": 5,
+   "variant": "lite-1B",
+   "U": -0.5127145051626673
+  },
+  {
+   "replicas": 5,
+   "variant": "full-3B",
+   "U": -0.6468109580418486
+  },
+  {
+   "replicas": 6,
+   "variant": "tiny-1B4",
+   "U": -0.5602113113634065
+  },
+  {
+   "replicas": 6,
+   "variant": "lite-1B",
+   "U": -0.5633449502920981
+  },
+  {
+   "replicas": 6,
+   "variant": "full-3B",
+   "U": -0.7082760186094946
+  }
+ ],
+ "wall_s": 20.86951184272766,
+ "cal_seeds": [
+  1000,
+  1001,
+  1002,
+  1003,
+  1004,
+  1005,
+  1006,
+  1007,
+  1008,
+  1009
+ ],
+ "cal_I": [
+  1.0,
+  400.0,
+  1000.0
+ ]
+}

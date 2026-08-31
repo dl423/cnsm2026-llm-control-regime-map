@@ -1,0 +1,58 @@
+{
+ "C|gpt-5.6-luna": {
+  "episodes": 180,
+  "invocations": 9180,
+  "parse_failures": 336,
+  "repaired": 0,
+  "decision_usd": 3.6438752000000014,
+  "parse_failure_rate": 0.036601307189542485
+ },
+ "C|claude-sonnet-5": {
+  "episodes": 60,
+  "invocations": 1740,
+  "parse_failures": 98,
+  "repaired": 56,
+  "decision_usd": 5.988332000000001,
+  "parse_failure_rate": 0.05632183908045977
+ },
+ "C|local-3B": {
+  "episodes": 180,
+  "invocations": 9180,
+  "parse_failures": 0,
+  "repaired": 0,
+  "decision_usd": 0.0,
+  "parse_failure_rate": 0.0
+ },
+ "E|gpt-5.6-luna": {
+  "episodes": 80,
+  "invocations": 2031,
+  "parse_failures": 96,
+  "repaired": 0,
+  "decision_usd": 0.9157546000000001,
+  "parse_failure_rate": 0.047267355982274745
+ },
+ "E|local-3B": {
+  "episodes": 80,
+  "invocations": 1361,
+  "parse_failures": 0,
+  "repaired": 0,
+  "decision_usd": 0.0,
+  "parse_failure_rate": 0.0
+ },
+ "H|gpt-5.6-luna": {
+  "episodes": 60,
+  "invocations": 1740,
+  "parse_failures": 47,
+  "repaired": 0,
+  "decision_usd": 0.6516848000000001,
+  "parse_failure_rate": 0.027011494252873563
+ },
+ "H|local-3B": {
+  "episodes": 60,
+  "invocations": 1740,
+  "parse_failures": 0,
+  "repaired": 0,
+  "decision_usd": 0.0,
+  "parse_failure_rate": 0.0
+ }
+}

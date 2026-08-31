@@ -1,0 +1,95 @@
+{
+ "observation_date": "2026-08-02",
+ "device_model": "NVIDIA Jetson AGX Orin Developer Kit",
+ "architecture": "aarch64",
+ "kernel_release": "5.15.148-tegra",
+ "l4t_release": "R36.4.4",
+ "cuda": {
+  "version": "12.6",
+  "compiler_build": "V12.6.68"
+ },
+ "memory_mib": 30696,
+ "power_mode": {
+  "name": "MODE_30W",
+  "id": 2
+ },
+ "cpu": {
+  "online_count": 8,
+  "governor": "schedutil"
+ },
+ "gpu": {
+  "governor": "nvhost_podgov",
+  "observed_idle_hz": 306000000,
+  "available_hz": [
+   306000000,
+   408000000,
+   510000000,
+   612000000,
+   714000000,
+   816000000,
+   918000000,
+   1020000000,
+   1122000000,
+   1224000000,
+   1300500000
+  ]
+ },
+ "power_monitor": {
+  "driver": "ina3221",
+  "rails": [
+   "VDD_GPU_SOC",
+   "VDD_CPU_CV",
+   "VIN_SYS_5V0",
+   "VDDQ_VDD2_1V8AO"
+  ],
+  "voltage_unit": "mV",
+  "current_unit": "mA",
+  "current_resolution_mA": 20,
+  "approx_power_resolution_w_on_20v_rails": 0.4,
+  "paired_voltage_current_read_latency_ms": 1.327,
+  "estimated_max_read_rate_hz": 753
+ },
+ "idle_capture": {
+  "duration_s": 30,
+  "nominal_rate_hz": 10,
+  "sample_count": 300,
+  "interval_ms": {
+   "mean": 100.0,
+   "max": 100.5
+  },
+  "rail_power_mw": {
+   "VDD_GPU_SOC": {
+    "mean": 1619,
+    "min": 1598,
+    "max": 1998,
+    "sd": 90
+   },
+   "VDD_CPU_CV": {
+    "mean": 43,
+    "min": 0,
+    "max": 799,
+    "sd": 147
+   },
+   "VIN_SYS_5V0": {
+    "mean": 2948,
+    "min": 2831,
+    "max": 3747,
+    "sd": 211
+   },
+   "VDDQ_VDD2_1V8AO": {
+    "mean": 484,
+    "min": 404,
+    "max": 910,
+    "sd": 128
+   }
+  }
+ },
+ "idle_thermal_millicelsius": {
+  "cpu": 41781,
+  "soc0": 39468,
+  "soc1": 38531,
+  "soc2": 38906,
+  "junction": 41875
+ },
+ "note": "Structured record of the platform capability and INA3221 measurement fields relevant to the S03 experiments."
+}

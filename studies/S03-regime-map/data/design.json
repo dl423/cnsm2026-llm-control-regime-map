@@ -1,0 +1,63 @@
+{
+ "_provenance": "Committed bridge between Layer-A measurements and the sweep (D-010). Every number here traces to a committed artifact: capacity/latency/energy from results/layer_a/slots_*.json (campaign 2026-08-02); accuracy from results/accuracy_probe.json; switch times measured launch-to-healthy 2026-08-02 (D-010); episode constants from PROTOCOL Sec. 2/7.",
+ "capacity_mode": "slots",
+ "accuracy": {
+  "tiny-1B4": 0.7222,
+  "lite-1B": 0.6944,
+  "full-3B": 0.9167
+ },
+ "switch_load_s": {
+  "tiny-1B4": 2.6,
+  "lite-1B": 2.9,
+  "full-3B": 3.8
+ },
+ "capacity_rps": {
+  "tiny-1B4": 1.95,
+  "lite-1B": 1.78,
+  "full-3B": 0.74
+ },
+ "capacity_curve_rps_at_k": {
+  "tiny-1B4": {
+   "1": 1.95,
+   "2": 3.15,
+   "4": 3.73,
+   "6": 4.18
+  },
+  "lite-1B": {
+   "1": 1.78,
+   "2": 3.5,
+   "4": 3.92,
+   "6": 4.7
+  },
+  "full-3B": {
+   "1": 0.74,
+   "2": 1.18,
+   "4": 1.45,
+   "6": 1.6
+  }
+ },
+ "horizon_s": 1800.0,
+ "warmup_exclude_s": 300.0,
+ "slo_ms": 3000.0,
+ "abandon_s": 30.0,
+ "max_replicas": 6,
+ "cadences_s": [
+  15,
+  60,
+  300
+ ],
+ "mean_rate_rps": 2.0,
+ "init_replicas": 2,
+ "init_variant": "tiny-1B4",
+ "_init_rule": "smallest r among configs with measured capacity >= 1.2 x mean offered rate (2.4 rps); tie-break highest measured accuracy. tiny-1B4@2 (3.15 rps, acc 0.722) beats lite-1B@2 (3.50 rps, acc 0.694) on the accuracy tie-break at equal cost.",
+ "_slo_rule": "PROTOCOL Sec. 7: T set so static and heuristic arms can plausibly meet it at moderate load. full-3B single-stream p95 = 2.57 s < 3.0 s (feasible unloaded); under batching contention full-3B p95 reaches 3.9-4.8 s (breaches) - the accuracy/latency trade-off is real, not degenerate.",
+ "I_levels": [
+  1.0,
+  400.0,
+  1000.0
+ ],
+ "I_droppable": [
+  40.0
+ ],
+ "_volatility_note": "v1.3 amendment: I=4000 (protocol v1 core) is unreachable at mean 2.0 rps with the fixed MMPP(2) shape (duty 0.06, burst 20 s): required rate gap d = sqrt((I-1)*mean*(q_hi+q_lo)/(2*p_hi*p_lo)) = 61.4 rps > mean/duty = 33.3 rps => negative low-state rate. Ceiling at this scale is I ~= 1177; core set {1, 400, 1000}. Mean rate itself is capped by measured max capacity 4.70 rps (lite-1B, 6 slots)."
+}

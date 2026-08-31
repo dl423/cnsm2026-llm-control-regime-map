@@ -1,0 +1,62 @@
+{
+ "models": {
+  "gpt-5.6-luna": {
+   "backend": "openai",
+   "model": "gpt-5.6-luna",
+   "n_calls_attempted": 50,
+   "n_api_success": 65,
+   "n_api_errors": 0,
+   "parse_fail_heuristic": 19,
+   "latency_s": {
+    "mean": 4.097996084506695,
+    "p50": 4.000686552375555,
+    "p95": 5.618924800306559
+   },
+   "tokens": {
+    "in_mean": 514.5538461538462,
+    "out_mean": 291.53846153846155
+   },
+   "usd": {
+    "per_call_mean": 0.00045275692307692307,
+    "total": 0.0294292
+   },
+   "model_ids_seen": [
+    "gpt-5.6-luna"
+   ],
+   "fingerprints_seen": [
+    "None"
+   ],
+   "wall_s": 266.5853760242462,
+   "errors": []
+  },
+  "claude-sonnet-5": {
+   "backend": "anthropic",
+   "model": "claude-sonnet-5",
+   "n_calls_attempted": 50,
+   "n_api_success": 92,
+   "n_api_errors": 0,
+   "parse_fail_heuristic": 49,
+   "latency_s": {
+    "mean": 4.71274560155428,
+    "p50": 4.799798604100943,
+    "p95": 5.972548995167017
+   },
+   "tokens": {
+    "in_mean": 713.4565217391304,
+    "out_mean": 358.82608695652175
+   },
+   "usd": {
+    "per_call_mean": 0.005015173913043479,
+    "total": 0.46139600000000003
+   },
+   "model_ids_seen": [
+    "claude-sonnet-5"
+   ],
+   "fingerprints_seen": [
+    "None"
+   ],
+   "wall_s": 433.88056349754333,
+   "errors": []
+  }
+ }
+}

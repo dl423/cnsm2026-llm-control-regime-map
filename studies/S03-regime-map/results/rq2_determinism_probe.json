@@ -1,0 +1,173 @@
+{
+ "purpose": "Which exposed sampling/determinism controls each hosted model under study accepts (PROTOCOL Sec. 4 ladder, v1.4; D-016). One minimal real call per row; rejections verbatim.",
+ "results": [
+  {
+   "vendor": "openai",
+   "params": {},
+   "accepted": true,
+   "model_id": "gpt-5.6-luna",
+   "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 19,
+    "total_tokens": 37,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 9,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    }
+   }
+  },
+  {
+   "vendor": "openai",
+   "params": {
+    "seed": 42
+   },
+   "accepted": true,
+   "model_id": "gpt-5.6-luna",
+   "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 18,
+    "total_tokens": 36,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 8,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    }
+   }
+  },
+  {
+   "vendor": "openai",
+   "params": {
+    "temperature": 0.0
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported."
+  },
+  {
+   "vendor": "openai",
+   "params": {
+    "temperature": 1.0
+   },
+   "accepted": true,
+   "model_id": "gpt-5.6-luna",
+   "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 4,
+    "total_tokens": 22,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "audio_tokens": 0,
+     "accepted_prediction_tokens": 0,
+     "rejected_prediction_tokens": 0
+    }
+   }
+  },
+  {
+   "vendor": "openai",
+   "params": {
+    "top_p": 0.01
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "Unsupported parameter: 'top_p' is not supported with this model."
+  },
+  {
+   "vendor": "anthropic",
+   "params": {},
+   "accepted": true,
+   "model_id": "claude-sonnet-5",
+   "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+   }
+  },
+  {
+   "vendor": "anthropic",
+   "params": {
+    "temperature": 0.0
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "`temperature` is deprecated for this model."
+  },
+  {
+   "vendor": "anthropic",
+   "params": {
+    "temperature": 0.5
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "`temperature` is deprecated for this model."
+  },
+  {
+   "vendor": "anthropic",
+   "params": {
+    "temperature": 1
+   },
+   "accepted": true,
+   "model_id": "claude-sonnet-5",
+   "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4,
+    "output_tokens_details": {
+     "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global"
+   }
+  },
+  {
+   "vendor": "anthropic",
+   "params": {
+    "top_k": 1
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "`top_k` is deprecated for this model."
+  },
+  {
+   "vendor": "anthropic",
+   "params": {
+    "top_p": 0.01
+   },
+   "accepted": false,
+   "http_status": 400,
+   "error_message": "`top_p` is deprecated for this model."
+  }
+ ]
+}

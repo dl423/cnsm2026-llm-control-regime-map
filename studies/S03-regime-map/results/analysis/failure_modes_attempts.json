@@ -1,0 +1,87 @@
+{
+ "C|claude-sonnet-5": {
+  "episodes": 60,
+  "attempts": 2099,
+  "empty_raw": 417,
+  "api_errors": {},
+  "decisions": 1740,
+  "retried_decisions": 222,
+  "max_attempt_seen": 2,
+  "empty_raw_rate_of_attempts": 0.19866603144354456,
+  "retry_rate_of_decisions": 0.12758620689655173
+ },
+ "C|gpt-5.6-luna": {
+  "episodes": 180,
+  "attempts": 11090,
+  "empty_raw": 2195,
+  "api_errors": {
+   "HTTP Error 400: Bad Request": 51
+  },
+  "decisions": 9180,
+  "retried_decisions": 1317,
+  "max_attempt_seen": 2,
+  "empty_raw_rate_of_attempts": 0.19792605951307485,
+  "retry_rate_of_decisions": 0.1434640522875817
+ },
+ "C|Llama-3.2-3B-Instruct-Q4_K_M.gguf": {
+  "episodes": 180,
+  "attempts": 9180,
+  "empty_raw": 0,
+  "api_errors": {},
+  "decisions": 9180,
+  "retried_decisions": 0,
+  "max_attempt_seen": 0,
+  "empty_raw_rate_of_attempts": 0.0,
+  "retry_rate_of_decisions": 0.0
+ },
+ "E|gpt-5.6-luna": {
+  "episodes": 80,
+  "attempts": 2541,
+  "empty_raw": 594,
+  "api_errors": {
+   "HTTP Error 400: Bad Request": 11,
+   "HTTP Error 500: Internal Server Error": 1
+  },
+  "decisions": 2031,
+  "retried_decisions": 352,
+  "max_attempt_seen": 2,
+  "empty_raw_rate_of_attempts": 0.23376623376623376,
+  "retry_rate_of_decisions": 0.17331363860167406
+ },
+ "E|Llama-3.2-3B-Instruct-Q4_K_M.gguf": {
+  "episodes": 80,
+  "attempts": 1361,
+  "empty_raw": 0,
+  "api_errors": {},
+  "decisions": 1361,
+  "retried_decisions": 0,
+  "max_attempt_seen": 0,
+  "empty_raw_rate_of_attempts": 0.0,
+  "retry_rate_of_decisions": 0.0
+ },
+ "H|gpt-5.6-luna": {
+  "episodes": 60,
+  "attempts": 2007,
+  "empty_raw": 298,
+  "api_errors": {
+   "HTTP Error 400: Bad Request": 15,
+   "HTTP Error 500: Internal Server Error": 1
+  },
+  "decisions": 1740,
+  "retried_decisions": 187,
+  "max_attempt_seen": 2,
+  "empty_raw_rate_of_attempts": 0.14848031888390634,
+  "retry_rate_of_decisions": 0.1074712643678161
+ },
+ "H|Llama-3.2-3B-Instruct-Q4_K_M.gguf": {
+  "episodes": 60,
+  "attempts": 1740,
+  "empty_raw": 0,
+  "api_errors": {},
+  "decisions": 1740,
+  "retried_decisions": 0,
+  "max_attempt_seen": 0,
+  "empty_raw_rate_of_attempts": 0.0,
+  "retry_rate_of_decisions": 0.0
+ }
+}
